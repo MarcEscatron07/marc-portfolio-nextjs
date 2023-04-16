@@ -57,7 +57,6 @@ a {
 }
 .navbar-header .nav-item {
   min-width: 80px;
-  text-align: center;
 }
 .navbar-header .nav-bullet {
   color: #64ffda;
@@ -84,6 +83,17 @@ a {
   color: #ffffff;
   padding: 20px;
   border-top: 2px solid #64ffda;
+}
+
+.btn-outline {
+  background: none;
+  color: #64ffda;
+  border: 1px solid #64ffda;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.btn-outline:hover {
+  background: #046f5f;
 }
 
 /*# sourceMappingURL=globals.css.map */

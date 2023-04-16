@@ -80,8 +80,7 @@ a {
     }
 
     .nav-item {
-        min-width: 80px;
-        text-align: center;        
+        min-width: 80px;    
     }
 
     .nav-bullet {
@@ -111,4 +110,16 @@ a {
     color: $tertiary-theme;
     padding: 20px;
     border-top: 2px solid $light-secondary;
+}
+
+.btn-outline {
+    background: none;
+    color: $light-secondary;
+    border: 1px solid $light-secondary;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    &:hover {
+        background: #046f5f;
+    }
 }

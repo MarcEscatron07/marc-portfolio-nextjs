@@ -26,10 +26,10 @@ function Header() {
                     <span className="navbar-toggler-icon text-white"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarHeader">
-                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul className="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
                         {NAV_LINKS && NAV_LINKS.map((navlink, idx) => {
                             return (
-                                <li key={idx} className="nav-item">
+                                <li key={idx} className="nav-item text-lg-center">
                                     <Link 
                                     className={`nav-link${activeLinkChecker(navlink.name)}`} 
                                     href={navlink.link}
@@ -40,6 +40,7 @@ function Header() {
                             )
                         })}
                     </ul>
+                    <button className="btn-outline">Resume</button>
                 </div>
             </div>
         </nav>
