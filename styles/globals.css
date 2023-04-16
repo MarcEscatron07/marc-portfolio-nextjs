@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Fira Code";
+  src: url(../public/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Share Tech Mono";
+  src: url(../public/fonts/Share_Tech_Mono/ShareTechMono-Regular.ttf);
+}
 body {
   background-color: #12233e;
 }
@@ -29,6 +37,17 @@ a {
 }
 .navbar-header a, .navbar-header ul, .navbar-header li {
   color: #ffffff;
+}
+.navbar-header .navbar-brand {
+  font-family: "Fira Code";
+  font-size: 1.5rem;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+.navbar-header .nav-link {
+  font-family: "Share Tech Mono";
+  font-size: 1.2rem;
+  letter-spacing: 0.2px;
 }
 .navbar-header .navbar-brand:hover, .navbar-header .nav-link:hover {
   color: #ccd6f6;
