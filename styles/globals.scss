@@ -1,0 +1,92 @@
+$nav-height: 100px;
+$footer-height: 80px;
+
+$primary-theme: #12233e;
+$secondary-theme: #006d79;
+$tertiary-theme: #ffffff;
+
+$light-secondary: #64ffda;
+$light-hover: #ccd6f6;
+
+body {
+    background-color: $primary-theme;    
+}
+
+a {
+    text-decoration: none;
+}
+
+.custom-scrollbar {
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: #c9c9c9;
+        border-radius: 10px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: #888888;
+        border-radius: 10px;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555555; 
+    }
+}
+
+.navbar-header {
+    min-height: $nav-height;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: $secondary-theme;
+
+    a, ul, li {
+        color: $tertiary-theme;
+    }
+
+    .navbar-brand, .nav-link {
+        &:hover {
+            color: $light-hover;
+        }
+
+        &.active {
+            color: $light-secondary;
+        }
+    }
+
+    .nav-item {
+        min-width: 80px;
+        text-align: center;
+    }
+
+    .nav-bullet {
+        color: $light-secondary;
+    }
+}
+
+.main-container {
+    min-height: 100vh;
+    color: $tertiary-theme;
+    padding-top: $nav-height;
+
+    .page-section {
+        min-height: 500px;
+        padding-top: $nav-height;
+    }
+}
+
+.navbar-footer {
+    min-height: $footer-height;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    background-color: $primary-theme;
+    color: $tertiary-theme;
+    padding: 20px;
+    border-top: 2px solid $light-secondary;
+}

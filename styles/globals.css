@@ -1,3 +1,71 @@
+body {
+  background-color: #12233e;
+}
 
+a {
+  text-decoration: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #c9c9c9;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888888;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+.navbar-header {
+  min-height: 100px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  background-color: #006d79;
+}
+.navbar-header a, .navbar-header ul, .navbar-header li {
+  color: #ffffff;
+}
+.navbar-header .navbar-brand:hover, .navbar-header .nav-link:hover {
+  color: #ccd6f6;
+}
+.navbar-header .navbar-brand.active, .navbar-header .nav-link.active {
+  color: #64ffda;
+}
+.navbar-header .nav-item {
+  min-width: 80px;
+  text-align: center;
+}
+.navbar-header .nav-bullet {
+  color: #64ffda;
+}
+
+.main-container {
+  min-height: 100vh;
+  color: #ffffff;
+  padding-top: 100px;
+}
+.main-container .page-section {
+  min-height: 500px;
+  padding-top: 100px;
+}
+
+.navbar-footer {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+  background-color: #12233e;
+  color: #ffffff;
+  padding: 20px;
+  border-top: 2px solid #64ffda;
+}
 
 /*# sourceMappingURL=globals.css.map */
