@@ -43,7 +43,7 @@ function Header() {
                             )
                         })}
                     </ul>
-                    <button className="btn-outline">Resume</button>
+                    <button className="btn-outline">Resumé</button>
                 </div>
             </div>
         </nav>
