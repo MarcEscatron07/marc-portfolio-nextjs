@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { NAV_LINKS } from '../variables'
 
@@ -21,7 +22,9 @@ function Header() {
     <>        
         <nav className="navbar-header navbar navbar-expand-lg">
             <div className="container">
-                <Link className="navbar-brand" href="/">Marc Benedict Escatron</Link>
+                <Link className="navbar-brand" href="/">
+                    <Image src="/images/nav-logo.png" height={100} width={100} alt="navbar-logo" />
+                </Link>
                 <button className="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon text-white"></span>
                 </button>
