@@ -50,7 +50,7 @@ a {
   letter-spacing: 0.2px;
 }
 .navbar-header .navbar-brand:hover, .navbar-header .nav-link:hover {
-  color: #ccd6f6;
+  color: #00b6ff;
 }
 .navbar-header .navbar-brand.active, .navbar-header .nav-link.active {
   color: #64ffda;
@@ -59,7 +59,7 @@ a {
   min-width: 80px;
 }
 .navbar-header .nav-bullet {
-  color: #64ffda;
+  color: #00b6ff;
 }
 
 .main-container {
@@ -93,7 +93,11 @@ a {
   border-radius: 5px;
 }
 .btn-outline:hover {
-  background: #046f5f;
+  background: #24957a;
+}
+
+.themed-link {
+  color: #00b6ff;
 }
 
 /*# sourceMappingURL=globals.css.map */

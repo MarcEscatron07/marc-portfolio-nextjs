@@ -4,9 +4,12 @@ $footer-height: 80px;
 $primary-theme: #12233e;
 $secondary-theme: #006d79;
 $tertiary-theme: #ffffff;
+$link-theme: #00b6ff;
+
+$alt-secondary: #24957a;
 
 $light-secondary: #64ffda;
-$light-hover: #ccd6f6;
+
 
 @font-face {
     font-family: 'Fira Code';
@@ -71,7 +74,7 @@ a {
 
     .navbar-brand, .nav-link {
         &:hover {
-            color: $light-hover;
+            color: $link-theme;
         }
 
         &.active {
@@ -84,7 +87,7 @@ a {
     }
 
     .nav-bullet {
-        color: $light-secondary;
+        color: $link-theme;
     }
 }
 
@@ -120,6 +123,10 @@ a {
     border-radius: 5px;
 
     &:hover {
-        background: #046f5f;
+        background: $alt-secondary;
     }
+}
+
+.themed-link {
+    color: $link-theme;
 }
