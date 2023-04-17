@@ -17,7 +17,7 @@ export default function Home() {
         <section id="home" className="page-section pt-0">
           <h1>Marc Benedict Escatron</h1>
           <h2>&lt;Web Developer /&gt;</h2>
-          <h3>A Frontend focused Web Developer specializing in single-page applications and in creating applications with efficient & maintainable code.</h3>
+          <h3>A Frontend focused Web Developer specializing in single-page applications and in creating web apps with efficient & maintainable code.</h3>
         </section>
         <About />
         <Experience />
