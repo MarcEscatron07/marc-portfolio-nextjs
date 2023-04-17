@@ -22,7 +22,7 @@ function Header() {
     <>        
         <nav className="navbar-header navbar navbar-expand-lg">
             <div className="container">
-                <Link className="navbar-brand" href="/">
+                <Link className="navbar-brand" href="/" onClick={() => navLinkHandler('')}>
                     <Image src="/images/nav-logo.png" height={100} width={100} alt="navbar-logo" />
                 </Link>
                 <button className="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
