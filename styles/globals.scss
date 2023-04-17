@@ -1,0 +1,132 @@
+$nav-height: 100px;
+$footer-height: 80px;
+
+$primary-theme: #12233e;
+$secondary-theme: #006d79;
+$tertiary-theme: #ffffff;
+$link-theme: #00b6ff;
+
+$alt-secondary: #24957a;
+
+$light-secondary: #64ffda;
+
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url(../public/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Share Tech Mono';
+    src: url(../public/fonts/Share_Tech_Mono/ShareTechMono-Regular.ttf);
+}
+
+body {
+    background-color: $primary-theme;
+}
+
+a {
+    text-decoration: none;
+}
+
+.custom-scrollbar {
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: #c9c9c9;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: #888888;
+        border-radius: 10px;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555555; 
+    }
+}
+
+.navbar-header {
+    min-height: $nav-height;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: $secondary-theme;
+
+    a, ul, li {
+        color: $tertiary-theme;
+    }
+
+    .navbar-brand {
+        font-family: 'Fira Code';
+        font-size: 1.5rem;
+        letter-spacing: .2px;
+        text-transform: uppercase;
+    }
+
+    .nav-link {
+        font-family: 'Share Tech Mono';
+        font-size: 1.2rem;
+        letter-spacing: .2px;
+    }
+
+    .navbar-brand, .nav-link {
+        &:hover {
+            color: $link-theme;
+        }
+
+        &.active {
+            color: $light-secondary;
+        }
+    }
+
+    .nav-item {
+        min-width: 80px;    
+    }
+
+    .nav-bullet {
+        color: $link-theme;
+    }
+}
+
+.main-container {
+    min-height: 100vh;
+    color: $tertiary-theme;
+    padding-top: $nav-height;
+
+    .page-section {
+        min-height: 635px;
+        padding-top: $nav-height;
+    }
+}
+
+.navbar-footer {
+    min-height: $footer-height;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    background-color: $primary-theme;
+    color: $tertiary-theme;
+    padding: 20px;
+    border-top: 2px solid $light-secondary;
+}
+
+.btn-outline {
+    background: none;
+    color: $light-secondary;
+    border: 1px solid $light-secondary;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    &:hover {
+        background: $alt-secondary;
+    }
+}
+
+.themed-link {
+    color: $link-theme;
+}
