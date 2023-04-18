@@ -18,14 +18,14 @@ a {
   width: 10px;
 }
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #c9c9c9;
+  background: #0d738d;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #888888;
+  background: #64ffda;
   border-radius: 10px;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #555555;
+  background: #24957a;
 }
 
 .navbar-header {

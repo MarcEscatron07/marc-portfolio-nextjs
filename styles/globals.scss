@@ -5,6 +5,7 @@ $primary-theme: #12233e;
 $secondary-theme: #006d79;
 $tertiary-theme: #ffffff;
 $link-theme: #00b6ff;
+$scrollbar-theme: #0d738d;
 
 $alt-secondary: #24957a;
 
@@ -35,16 +36,19 @@ a {
     }
     
     &::-webkit-scrollbar-track {
-        background: #c9c9c9;
+        // background: #c9c9c9;
+        background: $scrollbar-theme;
     }
     
     &::-webkit-scrollbar-thumb {
-        background: #888888;
+        // background: #888888;
+        background: $light-secondary;
         border-radius: 10px;
     }
     
     &::-webkit-scrollbar-thumb:hover {
-        background: #555555; 
+        // background: #555555;
+        background: $alt-secondary;
     }
 }
 
