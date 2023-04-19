@@ -37,18 +37,15 @@ a {
     }
     
     &::-webkit-scrollbar-track {
-        // background: #c9c9c9;
         background: $scrollbar-theme;
     }
     
     &::-webkit-scrollbar-thumb {
-        // background: #888888;
         background: $light-secondary;
         border-radius: 10px;
     }
     
     &::-webkit-scrollbar-thumb:hover {
-        // background: #555555;
         background: $alt-secondary;
     }
 }
