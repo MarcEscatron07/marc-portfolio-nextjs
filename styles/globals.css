@@ -47,7 +47,6 @@ a {
 .navbar-header .nav-link {
   font-family: "Share Tech Mono";
   font-size: 1.2rem;
-  letter-spacing: 0.2px;
 }
 .navbar-header .navbar-brand:hover, .navbar-header .nav-link:hover {
   color: #00b6ff;

@@ -1,4 +1,5 @@
 interface IHEADER_LINKS {
+    id: string,
     name: string,
     link: string
 }
@@ -9,20 +10,21 @@ interface IHOME_HEADERS {
 
 /** CONST VARIABLES */
 const HEADER_LINKS: IHEADER_LINKS[] = [
-    { name: 'About', link: '/#about' },
-    { name: 'Experience', link: '/#experience' },
-    { name: 'Projects', link: '/#projects' },
-    { name: 'Contact', link: '/#contact' },
+    { id: 'I', name: 'About', link: '/#about' },
+    { id: 'II', name: 'Experience', link: '/#experience' },
+    { id: 'III', name: 'Projects', link: '/#projects' },
+    { id: 'IV', name: 'Contact', link: '/#contact' },
 ];
 
 const HOME_HEADERS: IHOME_HEADERS[] = [
     { text: 'Marc Benedict Escatron' },
-    { text: 'Frontend Web Developer' },
-    { text: 'A Frontend focused Web Developer specializing in single-page applications and in writing efficient & maintainable code.' },
+    { text: 'Web Developer' },
+    { text: 'A Frontend focused developer specializing in single-page applications and in writing efficient & maintainable code.' },
 ];
 /** CONST VARIABLES */
 
 /** LET VARIABLES */
+
 /** LET VARIABLES */
 
 

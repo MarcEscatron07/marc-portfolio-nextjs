@@ -37,7 +37,7 @@ function Header() {
                                     className={`nav-link${activeLinkChecker(hLink.name)}`} 
                                     href={hLink.link}
                                     onClick={() => headerLinkHandler(hLink.name)}>
-                                        <span className="nav-bullet">0{++idx}.</span> {hLink.name}
+                                        <span className="nav-bullet">{hLink.id}.</span> {hLink.name}
                                     </Link>
                                 </li>
                             )
