@@ -5,8 +5,9 @@ $primary-theme: #12233e;
 $secondary-theme: #006d79;
 $tertiary-theme: #ffffff;
 $link-theme: #00b6ff;
-$scrollbar-theme: #0d738d;
+$scrollbar-theme: #214277;
 
+$alt-primary: #0a192f;
 $alt-secondary: #24957a;
 
 $light-secondary: #64ffda;
@@ -57,7 +58,7 @@ a {
     width: 100%;
     position: fixed;
     display: flex;
-    background-color: $secondary-theme;
+    background-color: $alt-primary;
 
     a, ul, li {
         color: $tertiary-theme;

@@ -18,7 +18,7 @@ a {
   width: 10px;
 }
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #0d738d;
+  background: #214277;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background: #64ffda;
@@ -33,7 +33,7 @@ a {
   width: 100%;
   position: fixed;
   display: flex;
-  background-color: #006d79;
+  background-color: #0a192f;
 }
 .navbar-header a, .navbar-header ul, .navbar-header li {
   color: #ffffff;
