@@ -13,6 +13,9 @@ body {
 a {
   text-decoration: none;
 }
+a:visited {
+  color: #ffffff;
+}
 
 .custom-scrollbar::-webkit-scrollbar {
   width: 10px;
@@ -101,13 +104,16 @@ a {
 
 /* CSS Ruleset for Home section */
 #home h1 {
+  font-family: "Fira Code";
   font-size: 4rem;
   padding-top: 8rem;
 }
 #home h2 {
+  font-family: "Share Tech Mono";
   font-size: 2rem;
 }
 #home h3 {
+  font-family: "Fira Code";
   font-size: 1.5rem;
   padding-top: 3rem;
 }
@@ -116,5 +122,11 @@ a {
 }
 
 /* CSS Ruleset for Home section */
+/* CSS Ruleset for About section */
+#about .about-paragraph {
+  margin: 0px;
+}
+
+/* CSS Ruleset for About section */
 
 /*# sourceMappingURL=globals.css.map */

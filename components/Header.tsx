@@ -37,7 +37,7 @@ function Header() {
                                     className={`nav-link${activeLinkChecker(hLink.name)}`} 
                                     href={hLink.url}
                                     onClick={() => headerLinkHandler(hLink.name)}>
-                                        <span className="nav-bullet">{hLink.order}.</span> {hLink.name}
+                                        <span className="nav-bullet">{hLink.id}.</span> {hLink.name}
                                     </Link>
                                 </li>
                             )
