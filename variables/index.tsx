@@ -1,7 +1,7 @@
 interface IHEADER_LINKS {
-    id: string,
+    order: string,
     name: string,
-    link: string
+    url: string
 }
 
 interface IHOME_HEADERS {
@@ -10,10 +10,10 @@ interface IHOME_HEADERS {
 
 /** CONST VARIABLES */
 const HEADER_LINKS: IHEADER_LINKS[] = [
-    { id: 'I', name: 'About', link: '/#about' },
-    { id: 'II', name: 'Experience', link: '/#experience' },
-    { id: 'III', name: 'Projects', link: '/#projects' },
-    { id: 'IV', name: 'Contact', link: '/#contact' },
+    { order: 'I', name: 'About', url: '/#about' },
+    { order: 'II', name: 'Experience', url: '/#experience' },
+    { order: 'III', name: 'Projects', url: '/#projects' },
+    { order: 'IV', name: 'Contact', url: '/#contact' },
 ];
 
 const HOME_HEADERS: IHOME_HEADERS[] = [

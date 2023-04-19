@@ -23,7 +23,7 @@ function Header() {
         <nav className="navbar-header navbar navbar-expand-lg">
             <div className="container">
                 <Link className="navbar-brand" href="/" onClick={() => headerLinkHandler('')}>
-                    <Image src="/images/mbe-logo.png" height={50} width={70} alt="navbar-logo" />
+                    <Image src="/images/mbe-logo.png" height={50} width={77} alt="navbar-logo" />
                 </Link>
                 <button className="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon text-white"></span>
@@ -35,9 +35,9 @@ function Header() {
                                 <li key={idx} className="nav-item text-lg-center">
                                     <Link 
                                     className={`nav-link${activeLinkChecker(hLink.name)}`} 
-                                    href={hLink.link}
+                                    href={hLink.url}
                                     onClick={() => headerLinkHandler(hLink.name)}>
-                                        <span className="nav-bullet">{hLink.id}.</span> {hLink.name}
+                                        <span className="nav-bullet">{hLink.order}.</span> {hLink.name}
                                     </Link>
                                 </li>
                             )

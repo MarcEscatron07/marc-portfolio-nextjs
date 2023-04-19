@@ -29,7 +29,7 @@ a {
 }
 
 .navbar-header {
-  min-height: 100px;
+  min-height: 80px;
   width: 100%;
   position: fixed;
   display: flex;
@@ -46,7 +46,7 @@ a {
 }
 .navbar-header .nav-link {
   font-family: "Share Tech Mono";
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .navbar-header .navbar-brand:hover, .navbar-header .nav-link:hover {
   color: #00b6ff;
@@ -64,11 +64,11 @@ a {
 .main-container {
   min-height: 100vh;
   color: #ffffff;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 .main-container .page-section {
   min-height: 635px;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .navbar-footer {
