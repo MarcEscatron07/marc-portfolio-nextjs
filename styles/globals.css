@@ -100,4 +100,22 @@ a {
   color: #00b6ff;
 }
 
+/* CSS Ruleset for Home section */
+#home h1 {
+  font-size: 4rem;
+  padding-top: 8rem;
+}
+#home h2 {
+  font-size: 2rem;
+}
+#home h3 {
+  font-size: 1.5rem;
+  padding-top: 3rem;
+}
+#home .home-header {
+  text-align: center;
+}
+
+/* CSS Ruleset for Home section */
+
 /*# sourceMappingURL=globals.css.map */
