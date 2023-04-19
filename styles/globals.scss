@@ -5,6 +5,7 @@ $primary-theme: #12233e;
 $secondary-theme: #006d79;
 $tertiary-theme: #ffffff;
 $link-theme: #00b6ff;
+$scrollbar-theme: #0d738d;
 
 $alt-secondary: #24957a;
 
@@ -35,16 +36,19 @@ a {
     }
     
     &::-webkit-scrollbar-track {
-        background: #c9c9c9;
+        // background: #c9c9c9;
+        background: $scrollbar-theme;
     }
     
     &::-webkit-scrollbar-thumb {
-        background: #888888;
+        // background: #888888;
+        background: $light-secondary;
         border-radius: 10px;
     }
     
     &::-webkit-scrollbar-thumb:hover {
-        background: #555555; 
+        // background: #555555;
+        background: $alt-secondary;
     }
 }
 
@@ -69,7 +73,6 @@ a {
     .nav-link {
         font-family: 'Share Tech Mono';
         font-size: 1.2rem;
-        letter-spacing: .2px;
     }
 
     .navbar-brand, .nav-link {
@@ -130,3 +133,25 @@ a {
 .themed-link {
     color: $link-theme;
 }
+
+/* CSS Ruleset for Home section */
+#home {
+    h1 {
+        font-size: 4rem;
+        padding-top: 8rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        padding-top: 3rem;
+    }
+
+    .home-header {
+        text-align: center;        
+    }
+}
+/* CSS Ruleset for Home section */

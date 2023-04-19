@@ -18,14 +18,14 @@ a {
   width: 10px;
 }
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #c9c9c9;
+  background: #0d738d;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #888888;
+  background: #64ffda;
   border-radius: 10px;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #555555;
+  background: #24957a;
 }
 
 .navbar-header {
@@ -47,7 +47,6 @@ a {
 .navbar-header .nav-link {
   font-family: "Share Tech Mono";
   font-size: 1.2rem;
-  letter-spacing: 0.2px;
 }
 .navbar-header .navbar-brand:hover, .navbar-header .nav-link:hover {
   color: #00b6ff;
@@ -99,5 +98,23 @@ a {
 .themed-link {
   color: #00b6ff;
 }
+
+/* CSS Ruleset for Home section */
+#home h1 {
+  font-size: 4rem;
+  padding-top: 8rem;
+}
+#home h2 {
+  font-size: 2rem;
+}
+#home h3 {
+  font-size: 1.5rem;
+  padding-top: 3rem;
+}
+#home .home-header {
+  text-align: center;
+}
+
+/* CSS Ruleset for Home section */
 
 /*# sourceMappingURL=globals.css.map */
