@@ -29,12 +29,12 @@ const HOME_HEADERS: IHOME_HEADERS[] = [
 ];
 
 const ABOUT_PARAGRAPHS: IABOUT_PARAGRAPHS[] = [
-    { id: 'par1', text: "Hey there! I'm Marc Benedict and I've been creating web applications for over 2 years." },
-    { id: 'par1', text: "My journey in Web Development began in 2019 when I enrolled in Zuitt -- a coding bootcamp in the Philippines." },
-    { id: 'par1', text: "The bootcamp lasted for 3 months and it helped me get my first job as a Junior Web Developer in a private company." },
-    { id: 'par2', text: "Fast-forward to today, I've had the privilege to work with great developers who helped me mature in my career and now," },
-    { id: 'par2', text: "I am currently working as an IT Programmer in the local government of Tagbilaran City, Bohol." },
-    { id: 'par3', text: "Here are the technologies I have used before and now:" },
+    { id: 'p1', text: "Hey there! I'm Marc Benedict and I've been creating web applications for over 2 years." },
+    { id: 'p1', text: "My journey in Web Development began in 2019 when I enrolled in Zuitt -- a coding bootcamp in the Philippines." },
+    { id: 'p1', text: "The bootcamp lasted for 3 months and it helped me get my first job as a Junior Web Developer in a private company." },
+    { id: 'p2', text: "Fast-forward to today, I've had the privilege to work with great developers who helped me mature in my career." },
+    { id: 'p2', text: "And now, I am currently working as an IT Programmer in the local government of Tagbilaran City, Bohol." },
+    { id: 'p3', text: "Here are the technologies I have used over the course of my career:" },
 ];
 /** CONST VARIABLES */
 

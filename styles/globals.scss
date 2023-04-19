@@ -103,6 +103,12 @@ a {
     .page-section {
         min-height: 635px;
         padding-top: $nav-height;
+
+        .section-header {
+            font-family: 'Fira Code';
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
     }
 }
 
@@ -163,6 +169,8 @@ a {
 /* CSS Ruleset for About section */
 #about {
     .about-paragraph {
+        font-family: 'Fira Code';
+        font-size: 1.15rem;
         margin: 0px;
     }
 }

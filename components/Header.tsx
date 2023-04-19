@@ -30,14 +30,14 @@ function Header() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarHeader">
                     <ul className="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
-                        {HEADER_LINKS && HEADER_LINKS.map((hLink, idx) => {
+                        {HEADER_LINKS && HEADER_LINKS.map((hlink, idx) => {
                             return (
                                 <li key={idx} className="nav-item text-lg-center">
                                     <Link 
-                                    className={`nav-link${activeLinkChecker(hLink.name)}`} 
-                                    href={hLink.url}
-                                    onClick={() => headerLinkHandler(hLink.name)}>
-                                        <span className="nav-bullet">{hLink.id}.</span> {hLink.name}
+                                    className={`nav-link${activeLinkChecker(hlink.name)}`} 
+                                    href={hlink.url}
+                                    onClick={() => headerLinkHandler(hlink.name)}>
+                                        <span className="nav-bullet">{hlink.id}.</span> {hlink.name}
                                     </Link>
                                 </li>
                             )
