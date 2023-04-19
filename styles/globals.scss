@@ -1,4 +1,4 @@
-$nav-height: 100px;
+$nav-height: 80px;
 $footer-height: 80px;
 
 $primary-theme: #12233e;
@@ -29,6 +29,9 @@ body {
 
 a {
     text-decoration: none;
+    &:visited {
+        color: $tertiary-theme;
+    }
 }
 
 .custom-scrollbar {
@@ -37,18 +40,15 @@ a {
     }
     
     &::-webkit-scrollbar-track {
-        // background: #c9c9c9;
         background: $scrollbar-theme;
     }
     
     &::-webkit-scrollbar-thumb {
-        // background: #888888;
         background: $light-secondary;
         border-radius: 10px;
     }
     
     &::-webkit-scrollbar-thumb:hover {
-        // background: #555555;
         background: $alt-secondary;
     }
 }
@@ -73,7 +73,7 @@ a {
 
     .nav-link {
         font-family: 'Share Tech Mono';
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .navbar-brand, .nav-link {
@@ -103,6 +103,12 @@ a {
     .page-section {
         min-height: 635px;
         padding-top: $nav-height;
+
+        .section-header {
+            font-family: 'Fira Code';
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
     }
 }
 
@@ -138,15 +144,18 @@ a {
 /* CSS Ruleset for Home section */
 #home {
     h1 {
+        font-family: 'Fira Code';
         font-size: 4rem;
         padding-top: 8rem;
     }
 
     h2 {
+        font-family: 'Share Tech Mono';
         font-size: 2rem;
     }
 
     h3 {
+        font-family: 'Fira Code';
         font-size: 1.5rem;
         padding-top: 3rem;
     }
@@ -156,3 +165,13 @@ a {
     }
 }
 /* CSS Ruleset for Home section */
+
+/* CSS Ruleset for About section */
+#about {
+    .about-paragraph {
+        font-family: 'Fira Code';
+        font-size: 1.15rem;
+        margin: 0px;
+    }
+}
+/* CSS Ruleset for About section */
