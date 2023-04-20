@@ -7,7 +7,7 @@ import { HEADER_LINKS } from '../variables'
 
 function Header() {
   const router = useRouter();
-  console.log('Header > router', router)
+//   console.log('Header > router', router)
 
   const activeLinkChecker = (url: string) => {
     if(url == router.asPath) {
