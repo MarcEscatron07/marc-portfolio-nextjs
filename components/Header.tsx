@@ -1,28 +1,26 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Image from 'next/image'
 
 import { HEADER_LINKS } from '../variables'
 
 function Header() {
-  const [activeLink, setActiveLink] = useState<string>('');
+  const router = useRouter();
+//   console.log('Header > router', router)
 
-  const activeLinkChecker = (name: string) => {
-    if(name == activeLink) {
+  const activeLinkChecker = (url: string) => {
+    if(url == router.asPath) {
         return ' active';
     }
     return '';
-  }
-
-  const headerLinkHandler = (name: string) => {
-    setActiveLink(name);
   }
 
   return (
     <>        
         <nav className="navbar-header navbar navbar-expand-lg">
             <div className="container">
-                <Link className="navbar-brand" href="/" onClick={() => headerLinkHandler('')}>
+                <Link className="navbar-brand" href="/">
                     <Image src="/images/mbe-logo.png" height={50} width={77} alt="navbar-logo" />
                 </Link>
                 <button className="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,9 +32,8 @@ function Header() {
                             return (
                                 <li key={idx} className="nav-item text-lg-center">
                                     <Link 
-                                    className={`nav-link${activeLinkChecker(hlink.name)}`} 
-                                    href={hlink.url}
-                                    onClick={() => headerLinkHandler(hlink.name)}>
+                                    className={`nav-link${activeLinkChecker(hlink.url)}`} 
+                                    href={hlink.url}>
                                         <span className="nav-bullet">{hlink.id}.</span> {hlink.name}
                                     </Link>
                                 </li>
