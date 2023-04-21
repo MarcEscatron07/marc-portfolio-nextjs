@@ -82,6 +82,7 @@ a {
     position: fixed;
     display: flex;
     background-color: $alt-primary;
+    z-index: 99999;
 
     a, ul, li {
         color: $tertiary-theme;
@@ -134,6 +135,7 @@ a {
 }
 
 .navbar-footer {
+    position: relative;
     min-height: $footer-height;
     display: flex;
     align-items: center;
@@ -144,6 +146,7 @@ a {
     color: $tertiary-theme;
     padding: 20px;
     border-top: 2px solid $light-secondary;
+    z-index: 99999;
 }
 
 .link-bullet {
