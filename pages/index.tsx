@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Layout from '../components/Layout'
+import Layout from '../components/shared/Layout'
 
 import About from './about'
 import Experience from './experience'
@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Marc Benedict Escatron | Frontend Web Developer</title>
+        <title>Marc Benedict Escatron | Web Developer</title>
       </Head>
       <Layout>
         <section id="home" className="page-section pt-0">
