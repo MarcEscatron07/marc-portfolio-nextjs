@@ -1,11 +1,31 @@
 @font-face {
-  font-family: "Fira Code";
-  src: url(../public/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf);
+  font-family: "Bai Jamjuree";
+  src: url(../public/fonts/Bai_Jamjuree/BaiJamjuree-Bold.ttf);
 }
 @font-face {
-  font-family: "Share Tech Mono";
-  src: url(../public/fonts/Share_Tech_Mono/ShareTechMono-Regular.ttf);
+  font-family: "Kanit";
+  src: url(../public/fonts/Kanit/Kanit-Regular.ttf);
 }
+@font-face {
+  font-family: "Play";
+  src: url(../public/fonts/Play/Play-Regular.ttf);
+}
+.navbar-brand,
+.section-header,
+#home h1 {
+  font-family: "Bai Jamjuree";
+}
+
+#about .about-paragraph,
+#home h3 {
+  font-family: "Kanit";
+}
+
+.nav-link,
+#home h2 {
+  font-family: "Play";
+}
+
 body {
   background-color: #12233e;
 }
@@ -42,13 +62,11 @@ a:visited {
   color: #ffffff;
 }
 .navbar-header .navbar-brand {
-  font-family: "Fira Code";
   font-size: 1.5rem;
   letter-spacing: 0.2px;
   text-transform: uppercase;
 }
 .navbar-header .nav-link {
-  font-family: "Share Tech Mono";
   font-size: 1rem;
 }
 .navbar-header .navbar-brand:hover, .navbar-header .nav-link:hover {
@@ -74,7 +92,6 @@ a:visited {
   padding-top: 80px;
 }
 .main-container .page-section .section-header {
-  font-family: "Fira Code";
   font-size: 2rem;
   margin-bottom: 2rem;
 }
@@ -109,16 +126,13 @@ a:visited {
 
 /* CSS Ruleset for Home section */
 #home h1 {
-  font-family: "Fira Code";
   font-size: 4rem;
-  padding-top: 8rem;
+  padding-top: 10rem;
 }
 #home h2 {
-  font-family: "Share Tech Mono";
   font-size: 2rem;
 }
 #home h3 {
-  font-family: "Fira Code";
   font-size: 1.5rem;
   padding-top: 3rem;
 }
@@ -129,7 +143,6 @@ a:visited {
 /* CSS Ruleset for Home section */
 /* CSS Ruleset for About section */
 #about .about-paragraph {
-  font-family: "Fira Code";
   font-size: 1.15rem;
   margin: 0px;
 }

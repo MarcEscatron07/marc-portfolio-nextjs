@@ -34,7 +34,7 @@ function Header() {
                                     <Link 
                                     className={`nav-link${activeLinkChecker(hlink.url)}`} 
                                     href={hlink.url}>
-                                        <span className="nav-bullet">{hlink.id}.</span> {hlink.name}
+                                        <span className="nav-bullet">{hlink.id}</span> {hlink.name}
                                     </Link>
                                 </li>
                             )

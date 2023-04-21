@@ -16,10 +16,10 @@ interface IABOUT_PARAGRAPHS {
 
 /** CONST VARIABLES */
 const HEADER_LINKS: IHEADER_LINKS[] = [
-    { id: 'I', name: 'About', url: '/#about' },
-    { id: 'II', name: 'Experience', url: '/#experience' },
-    { id: 'III', name: 'Projects', url: '/#projects' },
-    { id: 'IV', name: 'Contact', url: '/#contact' },
+    { id: '', name: 'About', url: '/#about' },
+    { id: '', name: 'Experience', url: '/#experience' },
+    { id: '', name: 'Projects', url: '/#projects' },
+    { id: '', name: 'Contact', url: '/#contact' },
 ];
 
 const HOME_HEADERS: IHOME_HEADERS[] = [
