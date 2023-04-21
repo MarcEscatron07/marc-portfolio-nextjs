@@ -28,7 +28,7 @@ const HEADER_LINKS: IHEADER_LINKS[] = [
 const HOME_HEADERS: IHOME_HEADERS[] = [
     { id: 'h1', text: 'Marc Benedict Escatron' },
     { id: 'h2', text: 'Web Developer' },
-    { id: 'h3', text: 'A Frontend developer specializing in single-page applications and in writing efficient & maintainable code.' },
+    { id: 'h3', text: 'A Frontend focused developer specializing in single-page applications and in writing efficient & maintainable code.' },
 ];
 
 const ABOUT_PARAGRAPHS: IABOUT_PARAGRAPHS[] = [

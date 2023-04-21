@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Marc Benedict Escatron | Frontend Web Developer</title>
+        <title>Marc Benedict Escatron | Web Developer</title>
       </Head>
       <Layout>
         <section id="home" className="page-section pt-0">
