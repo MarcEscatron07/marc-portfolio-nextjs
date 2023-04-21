@@ -53,7 +53,7 @@ body {
 a {
     text-decoration: none;
     &:visited {
-        color: $tertiary-theme;
+        color: $link-theme;
     }
 }
 
@@ -109,11 +109,7 @@ a {
 
     .nav-item {
         min-width: 80px;    
-    }
-
-    .nav-bullet {
-        color: $link-theme;
-    }
+    }    
 }
 
 .main-container {
@@ -126,8 +122,13 @@ a {
         padding-top: $nav-height;
 
         .section-header {
-            font-size: 2rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
+            
+            .header-content {
+                font-size: 2rem;
+                padding-bottom: 3px;
+                border-bottom: 3px solid $light-secondary;
+            }
         }
     }
 }
@@ -143,6 +144,10 @@ a {
     color: $tertiary-theme;
     padding: 20px;
     border-top: 2px solid $light-secondary;
+}
+
+.link-bullet {
+    color: $link-theme;
 }
 
 .btn-outline {
@@ -186,8 +191,13 @@ a {
 /* CSS Ruleset for About section */
 #about {
     .about-paragraph {
-        font-size: 1.15rem;
+        font-size: 1.2rem;
         margin: 0px;
+    }
+
+    .about-skills {
+        padding: 10px;
+        background-color: $alt-primary;
     }
 }
 /* CSS Ruleset for About section */

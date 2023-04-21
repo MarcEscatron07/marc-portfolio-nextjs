@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { HEADER_LINKS } from '../variables'
+import { HEADER_LINKS } from '../../variables'
 
 function Header() {
   const router = useRouter();
@@ -34,7 +34,7 @@ function Header() {
                                     <Link 
                                     className={`nav-link${activeLinkChecker(hlink.url)}`} 
                                     href={hlink.url}>
-                                        <span className="nav-bullet">{hlink.id}</span> {hlink.name}
+                                        <span className="link-bullet">{hlink.id}</span> {hlink.name}
                                     </Link>
                                 </li>
                             )

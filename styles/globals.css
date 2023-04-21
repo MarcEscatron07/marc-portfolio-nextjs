@@ -34,7 +34,7 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: #ffffff;
+  color: #00b6ff;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -78,9 +78,6 @@ a:visited {
 .navbar-header .nav-item {
   min-width: 80px;
 }
-.navbar-header .nav-bullet {
-  color: #00b6ff;
-}
 
 .main-container {
   min-height: 100vh;
@@ -92,8 +89,12 @@ a:visited {
   padding-top: 80px;
 }
 .main-container .page-section .section-header {
+  margin-bottom: 1.5rem;
+}
+.main-container .page-section .section-header .header-content {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #64ffda;
 }
 
 .navbar-footer {
@@ -107,6 +108,10 @@ a:visited {
   color: #ffffff;
   padding: 20px;
   border-top: 2px solid #64ffda;
+}
+
+.link-bullet {
+  color: #00b6ff;
 }
 
 .btn-outline {
@@ -143,8 +148,12 @@ a:visited {
 /* CSS Ruleset for Home section */
 /* CSS Ruleset for About section */
 #about .about-paragraph {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   margin: 0px;
+}
+#about .about-skills {
+  padding: 10px;
+  background-color: #0a192f;
 }
 
 /* CSS Ruleset for About section */
