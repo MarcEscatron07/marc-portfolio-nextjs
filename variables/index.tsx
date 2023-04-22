@@ -41,21 +41,21 @@ const ABOUT_PARAGRAPHS: IABOUT_PARAGRAPHS[] = [
 ];
 
 const ABOUT_SKILLS: IABOUT_SKILLS[] = [
-    { id: 'html', text: 'HTML', image: '/images/web_technologies/html5-icon.svg' },
-    { id: 'css', text: 'CSS', image: '/images/web_technologies/css3-icon.svg' },
-    { id: 'sass', text: 'Sass', image: '/images/web_technologies/sass-lang-icon.svg' },
-    { id: 'bootstrap', text: 'Bootstrap', image: '/images/web_technologies/bootstrap-4.svg' },
-    { id: 'js', text: 'JavaScript', image: '/images/web_technologies/javascript.svg' },
-    { id: 'jquery', text: 'jQuery', image: '/images/web_technologies/jquery-vertical.svg' },
-    { id: 'react', text: 'React', image: '/images/web_technologies/react.svg' },
-    { id: 'php', text: 'PHP', image: '/images/web_technologies/php-vertical.svg' },
-    { id: 'laravel', text: 'Laravel', image: '/images/web_technologies/laravel-2.svg' },
-    { id: 'mysql', text: 'MySQL', image: '/images/web_technologies/mysql-5.svg' },
-    { id: 'nodejs', text: 'NodeJS', image: '/images/web_technologies/nodejs-icon.svg' },
-    // { id: 'expressjs', text: 'ExpressJS', image: '/images/web_technologies/expressjs-ar21.svg' },
-    // { id: 'mongodb', text: 'MongoDB', image: '/images/web_technologies/mongodb-icon.svg' },
-    // { id: 'graphql', text: 'GraphQL', image: '/images/web_technologies/graphql.svg' },
-    { id: 'git', text: 'Git', image: '/images/web_technologies/git-icon.svg' },
+    { id: 'html', text: 'HTML', image: '/images/technologies/html5-logo.png' },
+    { id: 'css', text: 'CSS', image: '/images/technologies/css3-logo.png' },
+    { id: 'sass', text: 'Sass', image: '/images/technologies/sass-lang-logo.png' },
+    { id: 'bootstrap', text: 'Bootstrap', image: '/images/technologies/bootstrap-4-logo.png' },
+    { id: 'js', text: 'JavaScript', image: '/images/technologies/javascript-logo.png' },
+    { id: 'jquery', text: 'jQuery', image: '/images/technologies/jquery-alt-logo.png' },
+    { id: 'react', text: 'React', image: '/images/technologies/react-logo.png' },
+    { id: 'php', text: 'PHP', image: '/images/technologies/php-logo.png' },
+    { id: 'laravel', text: 'Laravel', image: '/images/technologies/laravel-logo.png' },
+    { id: 'mysql', text: 'MySQL', image: '/images/technologies/mysql-5-logo.png' },
+    { id: 'nodejs', text: 'NodeJS', image: '/images/technologies/nodejs-logo.png' },
+    // { id: 'expressjs', text: 'ExpressJS', image: '/images/technologies/expressjs-logo.png' },
+    // { id: 'mongodb', text: 'MongoDB', image: '/images/technologies/mongodb-logo.png' },
+    // { id: 'graphql', text: 'GraphQL', image: '/images/technologies/graphql-logo.png' },
+    { id: 'git', text: 'Git', image: '/images/technologies/git-logo.png' },
 ];
 /** CONST VARIABLES */
 
