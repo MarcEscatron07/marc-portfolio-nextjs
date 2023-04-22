@@ -12,7 +12,7 @@ function About() {
     <section id="about" className="page-section">
       <h6 className="section-header">
         <span className="header-content">
-          <span className="link-bullet">{HEADER_LINKS[0].id}</span> {HEADER_LINKS[0].name}
+          <span className="link-bullet">{HEADER_LINKS && HEADER_LINKS[0].id}</span> {HEADER_LINKS && HEADER_LINKS[0].name}
         </span>        
       </h6>
       {ABOUT_PARAGRAPHS && ABOUT_PARAGRAPHS.map((aparg, idx) => {
