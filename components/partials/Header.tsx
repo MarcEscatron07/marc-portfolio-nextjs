@@ -3,6 +3,9 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Image from 'next/image'
 
+import {faBars} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import { HEADER_LINKS } from '../../variables'
 
 function Header() {
@@ -23,8 +26,8 @@ function Header() {
                 <Link className="navbar-brand" href="/">
                     <Image src="/images/logo-me.png" alt="navbar-logo" height={70} width={70} />
                 </Link>
-                <button className="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon text-white"></span>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <FontAwesomeIcon icon={faBars} />
                 </button>
                 <div className="collapse navbar-collapse" id="navbarHeader">
                     <ul className="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
