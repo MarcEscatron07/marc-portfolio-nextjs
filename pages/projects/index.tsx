@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Application from '../../components/shared/Application'
+
 import {
   HEADER_LINKS
 } from '../../variables'
@@ -12,6 +14,9 @@ function Projects() {
           <span className="link-bullet">{HEADER_LINKS && HEADER_LINKS[2].id}</span> {HEADER_LINKS && HEADER_LINKS[2].name}
         </span>        
       </h6>
+      <div className="projects-application row mt-4">
+        <Application />
+      </div>
     </section>
   )
 }
