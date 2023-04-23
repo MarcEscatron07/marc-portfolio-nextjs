@@ -52,7 +52,7 @@ a:visited {
 }
 
 .navbar-header {
-  min-height: 80px;
+  min-height: 100px;
   width: 100%;
   position: fixed;
   display: flex;
@@ -83,11 +83,11 @@ a:visited {
 .main-container {
   min-height: 100vh;
   color: #ffffff;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 .main-container .page-section {
   min-height: 635px;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 .main-container .page-section .section-header {
   margin-bottom: 1.5rem;
