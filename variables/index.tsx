@@ -16,6 +16,12 @@ interface IABOUT_SKILLS {
     text: string,
     image: string
 }
+interface IEXPERIENCE_TIMELINE {
+    id: string,
+    title: string,
+    subtitle: string,
+    texts: string[]
+}
 
 /** CONST VARIABLES */
 const HEADER_LINKS: IHEADER_LINKS[] = [
@@ -57,6 +63,25 @@ const ABOUT_SKILLS: IABOUT_SKILLS[] = [
     // { id: 'graphql', text: 'GraphQL', image: '/images/technologies/graphql-logo.png' },
     { id: 'git', text: 'Git', image: '/images/technologies/git-logo.png' },
 ];
+
+const EXPERIENCE_TIMELINE: IEXPERIENCE_TIMELINE[] = [
+    {
+        id: 'ticto',
+        title: 'Tagbilaran Information & Communications Technology Office (T.I.C.T.O.)',
+        subtitle: 'IT Programmer | JAN 2023 - Present',
+        texts: [
+            ''
+        ]
+    },
+    {
+        id: 'xurpas',
+        title: 'Xurpas, Inc.',
+        subtitle: 'Junior Web Developer | MAR 2020 - DEC 2021',
+        texts: [
+            ''
+        ]
+    }
+];
 /** CONST VARIABLES */
 
 /** LET VARIABLES */
@@ -69,5 +94,6 @@ export {
     HEADER_LINKS,
     HOME_HEADERS,
     ABOUT_PARAGRAPHS,
-    ABOUT_SKILLS
+    ABOUT_SKILLS,
+    EXPERIENCE_TIMELINE
 }
