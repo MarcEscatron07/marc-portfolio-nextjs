@@ -21,7 +21,7 @@ function Header() {
         <nav className="navbar-header navbar navbar-expand-lg">
             <div className="container">
                 <Link className="navbar-brand" href="/">
-                    <Image src="/images/mbe-logo.png" alt="navbar-logo" height={50} width={77} />
+                    <Image src="/images/logo-me.png" alt="navbar-logo" height={77} width={77} />
                 </Link>
                 <button className="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon text-white"></span>
