@@ -153,16 +153,6 @@ a:visited {
   max-width: 50%;
 }
 
-.timeline-title {
-  margin: 0px;
-}
-
-.timeline-subtitle {
-  margin: 0px;
-  color: #ffffff;
-  font-size: 1rem;
-}
-
 /* CSS Ruleset for Home section */
 #home h1 {
   font-size: 4rem;
@@ -191,5 +181,19 @@ a:visited {
 }
 
 /* CSS Ruleset for About section */
+/* CSS Ruleset for Experience section */
+#experience .experience-timeline .timeline-title {
+  margin: 0px;
+}
+#experience .experience-timeline .timeline-subtitle {
+  margin: 0px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+#experience .experience-timeline .timeline-list .timeline-listitem {
+  font-size: 1.12rem;
+}
+
+/* CSS Ruleset for Experience section */
 
 /*# sourceMappingURL=globals.css.map */
