@@ -29,7 +29,7 @@ const steps = [
 function Timeline() {
   return (
     <>
-      <Box sx={{ maxWidth: 400 }}>
+      <Box>
         <Stepper orientation="vertical">
           {EXPERIENCE_TIMELINE && EXPERIENCE_TIMELINE.map((timeline, idx) => (
             <Step
