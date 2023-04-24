@@ -32,12 +32,15 @@ $light-secondary: #64ffda;
 
 .navbar-brand, 
 .section-header, 
-#home h1 {
+#home h1,
+#experience .timeline-title,
+#experience .timeline-subtitle {
     font-family: 'Bai Jamjuree';
 }
 
+#home h3,
 #about .about-paragraph,
-#home h3 {
+#experience .timeline-list {
     font-family: 'Kanit';
 }
 
@@ -234,12 +237,13 @@ a {
     .experience-timeline {
         .timeline-title {
             margin: 0px;   
+            font-size: 1.48rem;
         }
         
         .timeline-subtitle {
             margin: 0px;   
             color: $tertiary-theme;
-            font-size: 1rem;
+            font-size: 1.24rem;
         }
         
         .timeline-list {
