@@ -153,6 +153,16 @@ a:visited {
   max-width: 50%;
 }
 
+.timeline-title {
+  margin: 0px;
+}
+
+.timeline-subtitle {
+  margin: 0px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
 /* CSS Ruleset for Home section */
 #home h1 {
   font-size: 4rem;

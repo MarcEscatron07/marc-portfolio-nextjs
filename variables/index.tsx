@@ -16,6 +16,12 @@ interface IABOUT_SKILLS {
     text: string,
     image: string
 }
+interface IEXPERIENCE_TIMELINE {
+    id: string,
+    title: string,
+    subtitle: string,
+    texts: string[]
+}
 
 /** CONST VARIABLES */
 const HEADER_LINKS: IHEADER_LINKS[] = [
@@ -57,6 +63,35 @@ const ABOUT_SKILLS: IABOUT_SKILLS[] = [
     // { id: 'graphql', text: 'GraphQL', image: '/images/technologies/graphql-logo.png' },
     { id: 'git', text: 'Git', image: '/images/technologies/git-logo.png' },
 ];
+
+const EXPERIENCE_TIMELINE: IEXPERIENCE_TIMELINE[] = [
+    {
+        id: 'ticto',
+        title: 'Tagbilaran Information & Communications Technology Office (T.I.C.T.O.)',
+        subtitle: 'IT Programmer | JAN 2023 - Present',
+        texts: [
+            'Prepare and write programs according to the specifications determined primarily by Senior Programmers of the City Government.',
+            'Conceive, design and test logical structures for solving problems by computer and convert into logical series of instructions that the computer can follow.',
+            'Coordinate with the IT Team in the preparation of designs and programs for applicability.',
+            'Recommend possible latest trend in computer programs and designs.',
+            'Maintain files, records and documents of approved computer programs and submit reports when necessary.',
+            'Regularly assess and analyze the usability of the programs and designs for development and upgrading.'
+        ]
+    },
+    {
+        id: 'xurpas',
+        title: 'Xurpas, Inc.',
+        subtitle: 'Junior Web Developer | MAR 2020 - DEC 2021',
+        texts: [
+            'Developed, tested and maintained the frontend of web applications.',
+            'Assisted the development team with all aspects of website and application design.',
+            'Collaborated with other developers to implement new and useful web features.',
+            'Coordinated with UI/UX Designers, QA Testers and Project Managers to transform creative concepts into reality for clients.',
+            'Participated in stand-up meetings to have better progress in development with our clients\' feedback.',
+            'Kept up-to-date with the latest technologies and programming trends.',
+        ]
+    }
+];
 /** CONST VARIABLES */
 
 /** LET VARIABLES */
@@ -69,5 +104,6 @@ export {
     HEADER_LINKS,
     HOME_HEADERS,
     ABOUT_PARAGRAPHS,
-    ABOUT_SKILLS
+    ABOUT_SKILLS,
+    EXPERIENCE_TIMELINE
 }
