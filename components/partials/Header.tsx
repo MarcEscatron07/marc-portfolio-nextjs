@@ -59,11 +59,9 @@ function Header() {
                   );
                 })}
             </ul>
-            <button className="btn-outline">
-              <Link href={HEADER_RESUME} target="_blank">
+            <Link className="btn-outline" href={HEADER_RESUME} target="_blank">
                 Resumé
-              </Link>
-            </button>
+            </Link>
           </div>
         </div>
       </nav>
