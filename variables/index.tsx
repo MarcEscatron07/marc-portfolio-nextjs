@@ -70,7 +70,13 @@ const EXPERIENCE_TIMELINE: IEXPERIENCE_TIMELINE[] = [
         title: 'Tagbilaran Information & Communications Technology Office (T.I.C.T.O.)',
         subtitle: 'IT Programmer | JAN 2023 - Present',
         texts: [
-            ''
+            'Prepare and write programs according to the specifications determined primarily by Senior Programmers of the City Government.',
+            'Conceive, design and test logical structures for solving problems by computer and convert into logical series of instructions that the computer can follow.',
+            'Provide information on computer technology programs and designs for consideration by the Senior Programmer.',
+            'Coordinate with the IT Team in the preparation of designs and programs for applicability.',
+            'Recommend possible latest trend in computer programs and designs.',
+            'Maintain files, records and documents of approved computer programs and submit report/s when necessary.',
+            'Regularly assess and analyze the usability of the programs and designs for development and upgrading.'
         ]
     },
     {
