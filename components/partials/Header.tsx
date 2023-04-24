@@ -1,54 +1,74 @@
-import React from 'react'
-import { useRouter } from 'next/router'
-import Link from 'next/link'
-import Image from 'next/image'
+import React from "react";
+import { useRouter } from "next/router";
+import Link from "next/link";
+import Image from "next/image";
 
-import {faBars} from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { HEADER_LINKS } from '../../variables'
+import { HEADER_LINKS, HEADER_RESUME } from "../../variables";
 
 function Header() {
   const router = useRouter();
-//   console.log('Header > router', router)
+  //   console.log('Header > router', router)
 
   const activeLinkChecker = (url: string) => {
-    if(url == router.asPath) {
-        return ' active';
+    if (url == router.asPath) {
+      return " active";
     }
-    return '';
-  }
+    return "";
+  };
 
   return (
-    <>        
-        <nav className="navbar-header navbar navbar-expand-lg">
-            <div className="container">
-                <Link className="navbar-brand" href="/">
-                    <Image src="/images/logo-me.png" alt="navbar-logo" height={70} width={70} />
-                </Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                    <FontAwesomeIcon icon={faBars} />
-                </button>
-                <div className="collapse navbar-collapse" id="navbarHeader">
-                    <ul className="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
-                        {HEADER_LINKS && HEADER_LINKS.map((hlink, idx) => {
-                            return (
-                                <li key={idx} className="nav-item text-lg-center">
-                                    <Link 
-                                    className={`nav-link${activeLinkChecker(hlink.url)}`} 
-                                    href={hlink.url}>
-                                        <span className="link-bullet">{hlink.id}</span> {hlink.name}
-                                    </Link>
-                                </li>
-                            )
-                        })}
-                    </ul>
-                    <button className="btn-outline">Resumé</button>
-                </div>
-            </div>
-        </nav>
+    <>
+      <nav className="navbar-header navbar navbar-expand-lg">
+        <div className="container">
+          <Link className="navbar-brand" href="/">
+            <Image
+              src="/images/logo-me.png"
+              alt="navbar-logo"
+              height={70}
+              width={70}
+            />
+          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <FontAwesomeIcon icon={faBars} />
+          </button>
+          <div className="collapse navbar-collapse" id="navbarHeader">
+            <ul className="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
+              {HEADER_LINKS &&
+                HEADER_LINKS.map((hlink, idx) => {
+                  return (
+                    <li key={idx} className="nav-item text-lg-center">
+                      <Link
+                        className={`nav-link${activeLinkChecker(hlink.url)}`}
+                        href={hlink.url}
+                      >
+                        <span className="link-bullet">{hlink.id}</span>{" "}
+                        {hlink.name}
+                      </Link>
+                    </li>
+                  );
+                })}
+            </ul>
+            <button className="btn-outline">
+              <Link href={HEADER_RESUME} target="_blank">
+                Resumé
+              </Link>
+            </button>
+          </div>
+        </div>
+      </nav>
     </>
-  )
+  );
 }
 
-export default Header
+export default Header;
