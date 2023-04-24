@@ -14,13 +14,16 @@
 .section-header,
 #home h1,
 #experience .timeline-title,
-#experience .timeline-subtitle {
+#experience .timeline-subtitle,
+#projects .card-title {
   font-family: "Bai Jamjuree";
 }
 
 #home h3,
 #about .about-paragraph,
-#experience .timeline-list {
+#experience .timeline-list,
+#projects .card-text,
+#projects .icon-text {
   font-family: "Kanit";
 }
 

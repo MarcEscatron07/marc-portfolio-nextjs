@@ -33,8 +33,8 @@ function Application() {
                 <div className="row">
                   {app.technologies && app.technologies.map((t, tIdx) => {
                     return (
-                      <div key={tIdx} className="col-sm-6 col-lg-4">
-                        <i className="application-icon">{t.icon}</i> {t.name}
+                      <div key={tIdx} className="col-sm-6 col-xl-4">
+                        <i className="application-icon">{t.icon}</i> <span className="icon-text">{t.name}</span>
                       </div>
                     )
                   })}
