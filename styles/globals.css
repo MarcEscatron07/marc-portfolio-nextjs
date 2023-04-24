@@ -12,12 +12,15 @@
 }
 .navbar-brand,
 .section-header,
-#home h1 {
+#home h1,
+#experience .timeline-title,
+#experience .timeline-subtitle {
   font-family: "Bai Jamjuree";
 }
 
+#home h3,
 #about .about-paragraph,
-#home h3 {
+#experience .timeline-list {
   font-family: "Kanit";
 }
 
@@ -184,11 +187,12 @@ a:visited {
 /* CSS Ruleset for Experience section */
 #experience .experience-timeline .timeline-title {
   margin: 0px;
+  font-size: 1.48rem;
 }
 #experience .experience-timeline .timeline-subtitle {
   margin: 0px;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.24rem;
 }
 #experience .experience-timeline .timeline-list .timeline-listitem {
   font-size: 1.12rem;
