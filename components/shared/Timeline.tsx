@@ -11,21 +11,6 @@ import {
   EXPERIENCE_TIMELINE
 } from '../../variables'
 
-const steps = [
-  {
-    label:
-      "Tagbilaran Information & Communications Technology Office (T.I.C.T.O.)",
-    description: `For each ad campaign that you create, you can control how much
-              you're willing to spend on clicks and conversions, which networks
-              and geographical locations you want your ads to show on, and more.`,
-  },
-  {
-    label: "Xurpas, Inc.",
-    description:
-      "An ad group contains one or more ads which target a shared set of keywords.",
-  },
-];
-
 function Timeline() {
   return (
     <>

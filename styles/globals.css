@@ -156,6 +156,23 @@ a:visited {
   max-width: 50%;
 }
 
+.card {
+  position: relative;
+  background-color: #0a192f;
+  color: #ffffff;
+}
+.card .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .card-body .card-title {
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #64ffda;
+}
+
 /* CSS Ruleset for Home section */
 #home h1 {
   font-size: 4rem;
@@ -199,5 +216,21 @@ a:visited {
 }
 
 /* CSS Ruleset for Experience section */
+/* CSS Ruleset for Projects section */
+#projects .projects-application .card .card-link {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+#projects .projects-application .card .card-footer {
+  min-height: 220px;
+}
+#projects .projects-application .application-icon {
+  font-size: 1.5rem;
+}
+
+/* CSS Ruleset for Projects section */
 
 /*# sourceMappingURL=globals.css.map */

@@ -196,6 +196,27 @@ a {
     }
 }
 
+.card {
+    position: relative;
+    background-color: $alt-primary;
+    color: $tertiary-theme;
+    
+    .card-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-body {
+        .card-title {
+            text-align: center;
+            padding-bottom: 10px;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid $light-secondary;
+        }
+    }
+}
+
 /* CSS Ruleset for Home section */
 #home {
     h1 {
@@ -254,3 +275,27 @@ a {
     }
 }
 /* CSS Ruleset for Experience section */
+
+/* CSS Ruleset for Projects section */
+#projects {
+    .projects-application {
+        .card {
+            .card-link {
+                position: absolute;
+                top: 10px;
+                right: 15px;
+                font-size: 1.2rem;
+                color: $tertiary-theme;
+            }
+            
+            .card-footer {
+                min-height: 220px;
+            }
+        }
+
+        .application-icon {
+            font-size: 1.5rem;
+        }
+    }
+}
+/* CSS Ruleset for Projects section */

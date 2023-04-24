@@ -1,3 +1,21 @@
+import { 
+	DiGit,
+	DiHtml5,
+	DiCss3,
+	DiBootstrap,
+	DiJavascript1,
+	DiJqueryLogo,
+	DiSass,
+	DiPhp,
+	DiLaravel,
+	DiMysql,
+	DiHeroku,
+	DiMongodb,
+	DiReact,
+	DiNodejsSmall
+} from "react-icons/di";
+
+
 interface IHEADER_LINKS {
     id: string,
     name: string,
@@ -22,8 +40,16 @@ interface IEXPERIENCE_TIMELINE {
     subtitle: string,
     texts: string[]
 }
+interface IPROJECTS_APPLICATION {
+    id: string,
+    logo: string,
+    title: string,
+    text: string,
+    url: string,
+    technologies: {icon: any, name: string, }[]
+}
 
-/** CONST VARIABLES */
+
 const HEADER_LINKS: IHEADER_LINKS[] = [
     { id: '01.', name: 'About', url: '/#about' },
     { id: '02.', name: 'Experience', url: '/#experience' },
@@ -94,11 +120,62 @@ const EXPERIENCE_TIMELINE: IEXPERIENCE_TIMELINE[] = [
         ]
     }
 ];
-/** CONST VARIABLES */
 
-/** LET VARIABLES */
-
-/** LET VARIABLES */
+const PROJECTS_APPLICATION: IPROJECTS_APPLICATION[] = [
+    {
+        id: 'lcshop',
+        logo: '/images/projects/lcshop.png',
+        title: 'LCShop',
+        text: 'LCShop is an online store that sells eSports merchandise associated with a popular video game called ‘League of Legends’.',
+        url: 'https://lcshop-capstone-1-v2.herokuapp.com/',
+        technologies: [
+            { icon: <DiGit/>, name: "Git" },
+			{ icon: <DiHtml5/>, name: "HTML" },
+			{ icon: <DiCss3/>, name: "CSS"  },
+			{ icon: <DiBootstrap/>, name: "Bootstrap" },
+			{ icon: <DiJavascript1/>, name: "JavaScript" },
+			{ icon: <DiJqueryLogo/>, name: "jQuery" },
+			{ icon: <DiHeroku/>, name: "Heroku" },
+        ]
+     },
+    {
+        id: 'townportal',
+        logo: '/images/projects/townportal.png',
+        title: 'Town Portal',
+        text: 'Town Portal is an asset management system that manages the data of the users and equipments used in an internet cafe.',
+        url: 'http://townportal-capstone-2-v2.herokuapp.com/',
+        technologies: [
+            { icon: <DiGit/>, name: "Git" },
+			{ icon: <DiHtml5/>, name: "HTML" },
+			{ icon: <DiCss3/>, name: "CSS" },
+			{ icon: <DiBootstrap/>, name: "Bootstrap" },
+			{ icon: <DiSass/>, name: "Sass" },
+			{ icon: <DiJavascript1/>, name: "JavaScript" },
+			{ icon: <DiJqueryLogo/>, name: "jQuery" },
+			{ icon: <DiPhp/>, name: "PHP" },
+			{ icon: <DiLaravel/>, name: "Laravel" },
+			{ icon: <DiMysql/>, name: "MySQL" },
+			{ icon: <DiHeroku/>, name: "Heroku" },
+        ]
+    },
+    {
+        id: 'ferryfast',
+        logo: '/images/projects/ferryfast.png',
+        title: 'FerryFast',
+        text: 'FerryFast is an online fastcraft booking system which allows the user to have a fast and easy booking experience.',
+        url: 'https://ferryfast-capstone-3-v2.herokuapp.com/admin',
+        technologies: [
+            { icon: <DiGit/>, name: "Git" },
+			{ icon: <DiHtml5/>, name: "HTML" },
+			{ icon: <DiCss3/>, name: "CSS" },
+			{ icon: <DiBootstrap/>, name: "Bootstrap" },
+			{ icon: <DiMongodb/>, name: "MongoDB" },
+			{ icon: <DiReact/>, name: "React" },
+			{ icon: <DiNodejsSmall/>, name: "NodeJS" },
+			{ icon: <DiHeroku/>, name: "Heroku" },
+        ]
+    },
+];
 
 
 
@@ -108,5 +185,6 @@ export {
     HOME_HEADERS,
     ABOUT_PARAGRAPHS,
     ABOUT_SKILLS,
-    EXPERIENCE_TIMELINE
+    EXPERIENCE_TIMELINE,
+    PROJECTS_APPLICATION
 }
