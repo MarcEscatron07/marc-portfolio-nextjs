@@ -72,10 +72,9 @@ const EXPERIENCE_TIMELINE: IEXPERIENCE_TIMELINE[] = [
         texts: [
             'Prepare and write programs according to the specifications determined primarily by Senior Programmers of the City Government.',
             'Conceive, design and test logical structures for solving problems by computer and convert into logical series of instructions that the computer can follow.',
-            'Provide information on computer technology programs and designs for consideration by the Senior Programmer.',
             'Coordinate with the IT Team in the preparation of designs and programs for applicability.',
             'Recommend possible latest trend in computer programs and designs.',
-            'Maintain files, records and documents of approved computer programs and submit report/s when necessary.',
+            'Maintain files, records and documents of approved computer programs and submit reports when necessary.',
             'Regularly assess and analyze the usability of the programs and designs for development and upgrading.'
         ]
     },
@@ -84,7 +83,12 @@ const EXPERIENCE_TIMELINE: IEXPERIENCE_TIMELINE[] = [
         title: 'Xurpas, Inc.',
         subtitle: 'Junior Web Developer | MAR 2020 - DEC 2021',
         texts: [
-            ''
+            'Developed, tested and maintained the frontend of web applications.',
+            'Assisted the development team with all aspects of website and application design.',
+            'Collaborated with other developers to implement new and useful web features.',
+            'Coordinated with UI/UX Designers, QA Testers and Project Managers to transform creative concepts into reality for clients.',
+            'Participated in stand-up meetings to have better progress in development with our clients\' feedback.',
+            'Kept up-to-date with the latest technologies and programming trends.',
         ]
     }
 ];
