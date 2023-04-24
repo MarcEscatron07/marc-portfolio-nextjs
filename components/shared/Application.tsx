@@ -14,7 +14,7 @@ function Application() {
     <>
       {PROJECTS_APPLICATION && PROJECTS_APPLICATION.map((app, idx) => {
         return (
-          <div key={idx} className="col-md-4 p-4">
+          <div key={idx} className="col-lg-4 p-4">
             <div className="card">
               <Link className="card-link" href={app.url} target="_blank">
                 <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
@@ -33,7 +33,7 @@ function Application() {
                 <div className="row">
                   {app.technologies && app.technologies.map((t, tIdx) => {
                     return (
-                      <div key={tIdx} className="col-md-4">
+                      <div key={tIdx} className="col-sm-6 col-lg-4">
                         <i className="application-icon">{t.icon}</i> {t.name}
                       </div>
                     )
