@@ -288,12 +288,25 @@ a {
 #projects {
     .projects-application {
         .card {
+            .card-repo, .card-link {
+                position: absolute;                
+                color: $tertiary-theme;
+
+                &:hover {
+                    color: $link-theme;
+                }
+            }
+
+            .card-repo {
+                top: 10px;
+                right: 50px;
+                font-size: 1.295rem;
+            }
+
             .card-link {
-                position: absolute;
                 top: 10px;
                 right: 15px;
                 font-size: 1.2rem;
-                color: $tertiary-theme;
             }
             
             .card-footer {
@@ -307,3 +320,11 @@ a {
     }
 }
 /* CSS Ruleset for Projects section */
+
+@media screen and (max-width: 992px){ 
+    #home {
+        h1 {
+            padding-top: 5rem;
+        }
+    }
+}

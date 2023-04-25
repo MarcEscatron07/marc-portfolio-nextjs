@@ -224,12 +224,22 @@ a:visited {
 
 /* CSS Ruleset for Experience section */
 /* CSS Ruleset for Projects section */
-#projects .projects-application .card .card-link {
+#projects .projects-application .card .card-repo, #projects .projects-application .card .card-link {
   position: absolute;
+  color: #ffffff;
+}
+#projects .projects-application .card .card-repo:hover, #projects .projects-application .card .card-link:hover {
+  color: #00b6ff;
+}
+#projects .projects-application .card .card-repo {
+  top: 10px;
+  right: 50px;
+  font-size: 1.295rem;
+}
+#projects .projects-application .card .card-link {
   top: 10px;
   right: 15px;
   font-size: 1.2rem;
-  color: #ffffff;
 }
 #projects .projects-application .card .card-footer {
   min-height: 200px;
@@ -239,5 +249,10 @@ a:visited {
 }
 
 /* CSS Ruleset for Projects section */
+@media screen and (max-width: 992px) {
+  #home h1 {
+    padding-top: 5rem;
+  }
+}
 
 /*# sourceMappingURL=globals.css.map */

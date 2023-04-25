@@ -45,6 +45,7 @@ interface IPROJECTS_APPLICATION {
     logo: string,
     title: string,
     text: string,
+    repo: string,
     url: string,
     technologies: {icon: any, name: string, }[]
 }
@@ -127,6 +128,7 @@ const PROJECTS_APPLICATION: IPROJECTS_APPLICATION[] = [
         logo: '/images/projects/lcshop.png',
         title: 'LCShop',
         text: 'LCShop is an online store that sells eSports merchandise associated with a popular video game called ‘League of Legends’.',
+        repo: 'https://gitlab.com/MarcEscatron07/lcshop-capstone-1',
         url: 'https://lcshop-capstone-1-v2.herokuapp.com/',
         technologies: [
             { icon: <DiGit/>, name: "Git" },
@@ -143,6 +145,7 @@ const PROJECTS_APPLICATION: IPROJECTS_APPLICATION[] = [
         logo: '/images/projects/townportal.png',
         title: 'Town Portal',
         text: 'Town Portal is an asset management system that manages the data of the users and equipments used in an internet cafe.',
+        repo: 'https://gitlab.com/MarcEscatron07/townportal-capstone-2',
         url: 'http://townportal-capstone-2-v2.herokuapp.com/',
         technologies: [
             { icon: <DiGit/>, name: "Git" },
@@ -163,6 +166,7 @@ const PROJECTS_APPLICATION: IPROJECTS_APPLICATION[] = [
         logo: '/images/projects/ferryfast.png',
         title: 'FerryFast',
         text: 'FerryFast is an online fastcraft booking system which allows the user to have a fast and easy booking experience.',
+        repo: 'https://gitlab.com/MarcEscatron07/ferryfast-capstone-3',
         url: 'https://ferryfast-capstone-3-v2.herokuapp.com/admin',
         technologies: [
             { icon: <DiGit/>, name: "Git" },
