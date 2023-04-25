@@ -36,6 +36,7 @@ interface IABOUT_SKILLS {
 }
 interface IEXPERIENCE_TIMELINE {
     id: string,
+    order: number,
     title: string,
     subtitle: string,
     texts: string[]
@@ -96,6 +97,7 @@ const ABOUT_SKILLS: IABOUT_SKILLS[] = [
 const EXPERIENCE_TIMELINE: IEXPERIENCE_TIMELINE[] = [
     {
         id: 'ticto',
+        order: 2,
         title: 'Tagbilaran Information & Communications Technology Office (T.I.C.T.O.)',
         subtitle: 'IT Programmer | JAN 2023 - Present',
         texts: [
@@ -109,6 +111,7 @@ const EXPERIENCE_TIMELINE: IEXPERIENCE_TIMELINE[] = [
     },
     {
         id: 'xurpas',
+        order: 1,
         title: 'Xurpas, Inc.',
         subtitle: 'Junior Web Developer | MAR 2020 - DEC 2021',
         texts: [

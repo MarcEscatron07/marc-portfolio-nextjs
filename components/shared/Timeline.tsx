@@ -35,7 +35,7 @@ function Timeline() {
                 },
               }}
             >
-              <StepLabel>
+              <StepLabel icon={timeline.order}>
                 <p className="timeline-title">{timeline.title}</p>
                 <p className="timeline-subtitle">{timeline.subtitle}</p>
               </StepLabel>
