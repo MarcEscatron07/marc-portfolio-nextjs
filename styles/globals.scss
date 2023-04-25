@@ -46,6 +46,7 @@ $light-secondary: #64ffda;
 #projects .card-text,
 #projects .icon-text,
 #contact .contact-header,
+#contact .contact-socials,
 #contact .form-control {
     font-family: 'Kanit';
 }
@@ -341,8 +342,25 @@ textarea {
 #contact {
     .contact-form {    
         .contact-header {
-            margin: 0px;
-            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+
+            p {
+                margin: 0px;
+                font-size: 1.2rem;
+            }
+        }
+
+        .contact-socials {
+            p {
+                font-size: 1.1rem;
+            }
+
+            .contact-link {
+                &:hover {
+                    color: $link-theme;
+                }
+            }
         }
 
         .theme-container {

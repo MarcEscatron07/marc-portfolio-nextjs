@@ -26,6 +26,7 @@
 #projects .card-text,
 #projects .icon-text,
 #contact .contact-header,
+#contact .contact-socials,
 #contact .form-control {
   font-family: "Kanit";
 }
@@ -264,8 +265,18 @@ textarea {
 /* CSS Ruleset for Projects section */
 /* CSS Ruleset for Contact section */
 #contact .contact-form .contact-header {
+  display: flex;
+  align-items: center;
+}
+#contact .contact-form .contact-header p {
   margin: 0px;
   font-size: 1.2rem;
+}
+#contact .contact-form .contact-socials p {
+  font-size: 1.1rem;
+}
+#contact .contact-form .contact-socials .contact-link:hover {
+  color: #00b6ff;
 }
 #contact .contact-form .theme-container {
   background-color: #0a192f;

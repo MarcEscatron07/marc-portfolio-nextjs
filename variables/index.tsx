@@ -14,6 +14,7 @@ import {
 	DiReact,
 	DiNodejsSmall
 } from "react-icons/di";
+import { faFacebook, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 
 interface IHEADER_LINKS {
@@ -49,6 +50,12 @@ interface IPROJECTS_APPLICATION {
     repo: string,
     url: string,
     technologies: {icon: any, name: string, }[]
+}
+interface ICONTACT_SOCIALS {
+    id: string,
+    title: string,
+    url: string,
+    icon: any
 }
 
 
@@ -186,6 +193,33 @@ const PROJECTS_APPLICATION: IPROJECTS_APPLICATION[] = [
 
 const CONTACT_HEADER: string = "Feel free to drop a message and I will respond as soon as possible!";
 
+const CONTACT_SOCIALS: ICONTACT_SOCIALS[] = [
+    {
+        id: 'facebook',
+        title: 'Facebook',
+        url: 'https://www.facebook.com/marcusbenz07/',
+        icon: faFacebook
+    },
+    {
+        id: 'twitter',
+        title: 'Twitter',
+        url: 'https://twitter.com/marcusbenz07',
+        icon: faTwitter
+    },
+    {
+        id: 'instagram',
+        title: 'Instagram',
+        url: 'https://www.instagram.com/marcusbenz07/',
+        icon: faInstagram
+    },
+    {
+        id: 'linkedin',
+        title: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/marc-escatron07/',
+        icon: faLinkedin
+    },
+];
+
 
 
 export {
@@ -196,5 +230,6 @@ export {
     ABOUT_SKILLS,
     EXPERIENCE_TIMELINE,
     PROJECTS_APPLICATION,
-    CONTACT_HEADER
+    CONTACT_HEADER,
+    CONTACT_SOCIALS
 }
