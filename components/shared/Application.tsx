@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from 'next/image'
 
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faSquareGitlab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
@@ -16,7 +17,10 @@ function Application() {
         return (
           <div key={idx} className="col-lg-4 p-4">
             <div className="card">
-              <Link className="card-link" href={app.url} target="_blank">
+              <Link className="card-repo" href={app.repo} title="GitLab Link" target="_blank">
+                <FontAwesomeIcon icon={faSquareGitlab} />
+              </Link>
+              <Link className="card-link" href={app.url} title="Project Link" target="_blank">
                 <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
               </Link>
               <div className="card-header">
