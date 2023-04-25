@@ -28,6 +28,7 @@
 }
 
 .nav-link,
+.navbar-footer .navbar-credit,
 #home h2 {
   font-family: "Play";
 }
@@ -122,6 +123,9 @@ a:visited {
   padding: 20px;
   border-top: 2px solid #64ffda;
   z-index: 99999;
+}
+.navbar-footer .navbar-credit {
+  margin: 0px;
 }
 
 .link-bullet {
@@ -228,7 +232,7 @@ a:visited {
   color: #ffffff;
 }
 #projects .projects-application .card .card-footer {
-  min-height: 220px;
+  min-height: 200px;
 }
 #projects .projects-application .application-icon {
   font-size: 1.5rem;

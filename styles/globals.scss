@@ -48,6 +48,7 @@ $light-secondary: #64ffda;
 }
 
 .nav-link,
+.navbar-footer .navbar-credit,
 #home h2 {
     font-family: 'Play';
 }
@@ -159,6 +160,10 @@ a {
     padding: 20px;
     border-top: 2px solid $light-secondary;
     z-index: 99999;
+
+    .navbar-credit {
+        margin: 0px;
+    }
 }
 
 .link-bullet {
@@ -292,7 +297,7 @@ a {
             }
             
             .card-footer {
-                min-height: 220px;
+                min-height: 200px;
             }
         }
 
