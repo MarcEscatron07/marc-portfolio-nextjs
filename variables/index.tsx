@@ -184,6 +184,8 @@ const PROJECTS_APPLICATION: IPROJECTS_APPLICATION[] = [
     },
 ];
 
+const CONTACT_HEADER: string = "Feel free to drop a message and I will respond as soon as possible!";
+
 
 
 export {
@@ -193,5 +195,6 @@ export {
     ABOUT_PARAGRAPHS,
     ABOUT_SKILLS,
     EXPERIENCE_TIMELINE,
-    PROJECTS_APPLICATION
+    PROJECTS_APPLICATION,
+    CONTACT_HEADER
 }

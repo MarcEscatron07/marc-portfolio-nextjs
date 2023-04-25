@@ -35,7 +35,8 @@ $light-secondary: #64ffda;
 #home h1,
 #experience .timeline-title,
 #experience .timeline-subtitle,
-#projects .card-title {
+#projects .card-title,
+#contact .form-label {
     font-family: 'Bai Jamjuree';
 }
 
@@ -43,7 +44,9 @@ $light-secondary: #64ffda;
 #about .about-paragraph,
 #experience .timeline-list,
 #projects .card-text,
-#projects .icon-text {
+#projects .icon-text,
+#contact .contact-header,
+#contact .form-control {
     font-family: 'Kanit';
 }
 
@@ -62,6 +65,11 @@ a {
     &:visited {
         color: $link-theme;
     }
+}
+
+textarea {
+    resize: none;
+    min-height: 65px !important;
 }
 
 .custom-scrollbar {
@@ -172,10 +180,12 @@ a {
 
 .btn-outline {
     background: none;
-    color: $light-secondary;
+    color: $light-secondary !important;
     border: 1px solid $light-secondary;
     padding: 10px 15px;
     border-radius: 5px;
+    min-width: 100px;
+    text-align: center;
 
     &:hover {
         background: $alt-secondary;
@@ -320,6 +330,30 @@ a {
     }
 }
 /* CSS Ruleset for Projects section */
+
+/* CSS Ruleset for Contact section */
+#contact {
+    .contact-form {    
+        .contact-header {
+            margin: 0px;
+            font-size: 1.2rem;
+        }
+
+        .theme-container {
+            background-color: $alt-primary;
+            padding: 20px;
+        }
+
+        .form-label {
+            font-size: 1.2rem;
+        }
+
+        .form-control {
+            border-radius: 0px;
+        }
+    }
+}
+/* CSS Ruleset for Contact section */
 
 @media screen and (max-width: 992px){ 
     #home {
