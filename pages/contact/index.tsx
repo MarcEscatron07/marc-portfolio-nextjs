@@ -1,8 +1,12 @@
 import React from 'react'
+import Link from "next/link"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
   HEADER_LINKS,
-  CONTACT_HEADER
+  CONTACT_HEADER,
+  CONTACT_SOCIALS
 } from '../../variables'
 
 function Contact() {
@@ -21,8 +25,22 @@ function Contact() {
       <form className="contact-form row mt-4 py-4" onSubmit={onFormSubmit}>
         <div className="col-lg-12 pb-2 px-4">
           <div className="row theme-container">
-            <div className="col-12 my-2">
-              <p className="contact-header">{CONTACT_HEADER}</p>
+            <div className="col-lg-9 my-2 contact-header">
+              <p>{CONTACT_HEADER}</p>
+            </div>
+            <div className="col-lg-3 my-2 contact-socials">
+              <p>Social Media:</p>
+              <div className="row">
+                {CONTACT_SOCIALS && CONTACT_SOCIALS.map((social, idx) => {
+                  return (
+                    <div key={idx} className="col-3">
+                      <Link className="contact-link" href={social.url} title={social.title} target="_blank">
+                        <FontAwesomeIcon size="xl" icon={social.icon} />
+                      </Link>
+                    </div>
+                  )
+                })}
+              </div>
             </div>
           </div>
         </div>
