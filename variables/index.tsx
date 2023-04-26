@@ -109,7 +109,7 @@ const EXPERIENCE_TIMELINE: IEXPERIENCE_TIMELINE[] = [
         subtitle: 'IT Programmer | JAN 2023 - Present',
         texts: [
             'Prepare and write programs according to the specifications determined primarily by Senior Programmers of the City Government.',
-            'Conceive, design and test logical structures for solving problems by computer and convert into logical series of instructions that the computer can follow.',
+            'Conceive, design and test logical structures for solving problems which the computer can follow.',
             'Coordinate with the IT Team in the preparation of designs and programs for applicability.',
             'Recommend possible latest trend in computer programs and designs.',
             'Maintain files, records and documents of approved computer programs and submit reports when necessary.',

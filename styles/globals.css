@@ -110,7 +110,7 @@ textarea {
   padding-top: 100px;
 }
 .main-container .page-section {
-  min-height: 635px;
+  min-height: 660px;
   padding-top: 100px;
 }
 .main-container .page-section .section-header {
@@ -157,7 +157,7 @@ textarea {
   background: #24957a;
 }
 
-.themed-link {
+.theme-link {
   color: #00b6ff;
 }
 
@@ -194,7 +194,15 @@ textarea {
   border-bottom: 2px solid #64ffda;
 }
 
+.texture-bg {
+  background-color: rgb(18, 35, 62);
+  background-image: url(../public/images/textures/inspiration-geometry.png);
+}
+
 /* CSS Ruleset for Home section */
+#home {
+  padding-top: 0px;
+}
 #home h1 {
   font-size: 4rem;
   padding-top: 10rem;
@@ -213,8 +221,12 @@ textarea {
 /* CSS Ruleset for Home section */
 /* CSS Ruleset for About section */
 #about .about-paragraph {
-  font-size: 1.2rem;
+  background-color: #0a192f;
+  padding: 20px;
+}
+#about .about-paragraph p {
   margin: 0px;
+  font-size: 1.2rem;
 }
 #about .about-skills {
   padding: 5px;
@@ -232,7 +244,11 @@ textarea {
   color: #ffffff;
   font-size: 1.24rem;
 }
-#experience .experience-timeline .timeline-list .timeline-listitem {
+#experience .experience-timeline .timeline-container {
+  background-color: #0a192f;
+  padding: 20px 20px 10px 20px;
+}
+#experience .experience-timeline .timeline-container .timeline-list .timeline-listitem {
   font-size: 1.12rem;
 }
 

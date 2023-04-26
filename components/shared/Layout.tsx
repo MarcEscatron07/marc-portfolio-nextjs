@@ -6,7 +6,7 @@ function Layout(props: any) {
   return (
     <>
         <Header />
-        <main className="container main-container">
+        <main className="main-container texture-bg">
             {props.children}
         </main>
         <Footer />
