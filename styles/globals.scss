@@ -324,10 +324,10 @@ textarea {
         .card {
             .card-repo, .card-link {
                 position: absolute;                
-                color: $tertiary-theme;
+                color: $link-theme;
 
                 &:hover {
-                    color: $link-theme;
+                    color: $light-secondary;
                 }
             }
 
@@ -374,8 +374,10 @@ textarea {
             }
 
             .contact-link {
+                color: $link-theme;
+
                 &:hover {
-                    color: $link-theme;
+                    color: $light-secondary;
                 }
             }
         }

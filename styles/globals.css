@@ -256,10 +256,10 @@ textarea {
 /* CSS Ruleset for Projects section */
 #projects .projects-application .card .card-repo, #projects .projects-application .card .card-link {
   position: absolute;
-  color: #ffffff;
+  color: #00b6ff;
 }
 #projects .projects-application .card .card-repo:hover, #projects .projects-application .card .card-link:hover {
-  color: #00b6ff;
+  color: #64ffda;
 }
 #projects .projects-application .card .card-repo {
   top: 10px;
@@ -291,8 +291,11 @@ textarea {
 #contact .contact-form .contact-socials p {
   font-size: 1.1rem;
 }
-#contact .contact-form .contact-socials .contact-link:hover {
+#contact .contact-form .contact-socials .contact-link {
   color: #00b6ff;
+}
+#contact .contact-form .contact-socials .contact-link:hover {
+  color: #64ffda;
 }
 #contact .contact-form .theme-container {
   background-color: #0a192f;
