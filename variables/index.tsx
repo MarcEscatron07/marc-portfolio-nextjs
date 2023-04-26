@@ -215,7 +215,7 @@ const CONTACT_SOCIALS: ICONTACT_SOCIALS[] = [
     {
         id: 'linkedin',
         title: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/marc-escatron07/',
+        url: 'https://www.linkedin.com/in/marcusbenz07/',
         icon: faLinkedin
     },
 ];
