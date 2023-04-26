@@ -40,13 +40,15 @@ function Timeline() {
                 <p className="timeline-subtitle">{timeline.subtitle}</p>
               </StepLabel>
               <StepContent>
-                <ul className="timeline-list">
-                  {timeline.texts && timeline.texts.map((text, tIdx) => {
-                    return (
-                      <li key={tIdx} className="timeline-listitem">{text}</li>
-                    )
-                  })}
-                </ul>
+                <div className="timeline-container">
+                  <ul className="timeline-list">
+                    {timeline.texts && timeline.texts.map((text, tIdx) => {
+                      return (
+                        <li key={tIdx} className="timeline-listitem">{text}</li>
+                      )
+                    })}
+                  </ul>
+                </div>
               </StepContent>
             </Step>
           ))}

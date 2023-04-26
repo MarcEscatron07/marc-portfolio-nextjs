@@ -147,7 +147,7 @@ textarea {
     padding-top: $nav-height;
 
     .page-section {
-        min-height: 635px;
+        min-height: 660px;
         padding-top: $nav-height;
 
         .section-header {
@@ -199,7 +199,7 @@ textarea {
     }
 }
 
-.themed-link {
+.theme-link {
     color: $link-theme;
 }
 
@@ -242,8 +242,15 @@ textarea {
     }
 }
 
+.texture-bg {
+    background-color: rgb(18, 35, 62, 1);
+    background-image: url(../public/images/textures/inspiration-geometry.png);
+}
+
 /* CSS Ruleset for Home section */
 #home {
+    padding-top: 0px;
+
     h1 {
         font-size: 4rem;
         padding-top: 10rem;
@@ -267,8 +274,13 @@ textarea {
 /* CSS Ruleset for About section */
 #about {
     .about-paragraph {
-        font-size: 1.2rem;
-        margin: 0px;
+        background-color: $alt-primary;
+        padding: 20px;
+
+        p {
+            margin: 0px;
+            font-size: 1.2rem;
+        }
     }
 
     .about-skills {
@@ -292,9 +304,14 @@ textarea {
             font-size: 1.24rem;
         }
         
-        .timeline-list {
-            .timeline-listitem {
-                font-size: 1.12rem;
+        .timeline-container {
+            background-color: $alt-primary;
+            padding: 20px 20px 10px 20px;
+            
+            .timeline-list {
+                .timeline-listitem {
+                    font-size: 1.12rem;
+                }
             }
         }
     }
