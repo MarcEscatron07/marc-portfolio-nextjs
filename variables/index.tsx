@@ -66,7 +66,7 @@ const HEADER_LINKS: IHEADER_LINKS[] = [
     { id: '04.', name: 'Contact', url: '/#contact' },
 ];
 
-const HEADER_RESUME: string = '/files/resume.pdf';
+const HEADER_RESUME: string = '/files/marc-escatron-resume.pdf';
 
 const HOME_HEADERS: IHOME_HEADERS[] = [
     { id: 'h1', text: 'Marc Benedict Escatron' },
