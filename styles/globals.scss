@@ -1,6 +1,9 @@
 $nav-height: 100px;
 $footer-height: 80px;
 
+$profile-height: 220px;
+$profile-width: 220px;
+
 $primary-theme: #12233e;
 $secondary-theme: #006d79;
 $tertiary-theme: #ffffff;
@@ -128,7 +131,7 @@ textarea {
 
     .navbar-brand, .nav-link {
         &:hover {
-            color: $link-theme;
+            color: $light-secondary;
         }
 
         &.active {
@@ -178,6 +181,12 @@ textarea {
 
     .navbar-credit {
         margin: 0px;
+    }
+
+    a {
+        &:hover {
+            color: $light-secondary;
+        }
     }
 }
 
@@ -254,6 +263,7 @@ textarea {
     h1 {
         font-size: 4rem;
         padding-top: 10rem;
+        color: $light-secondary;
     }
 
     h2 {
@@ -276,10 +286,27 @@ textarea {
     .about-paragraph {
         background-color: $alt-primary;
         padding: 20px;
+        text-align: justify;
 
         p {
             margin: 0px;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+        }
+    }
+
+    .about-profile {
+        position: relative;
+        height: $profile-height;
+        width: $profile-width;
+        border: 3px solid $light-secondary;
+        border-radius: 5px;
+
+        img {
+            position: absolute;
+            top: -10px;
+            right: 5px;
+            border-radius: 5px;
+            z-index: 10;
         }
     }
 
@@ -309,6 +336,8 @@ textarea {
             padding: 20px 20px 10px 20px;
             
             .timeline-list {
+                text-align: justify;
+                
                 .timeline-listitem {
                     font-size: 1.12rem;
                 }
