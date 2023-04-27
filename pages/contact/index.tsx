@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Link from "next/link"
+import Swal from 'sweetalert2';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -33,16 +34,29 @@ function Contact() {
     e.preventDefault();
     // console.log('Contact > onFormSubmit event', e)
 
-    const payload: IContactData = contactData;
+    const payload: any = {
+      ...contactData,
+      subject: 'Marc Escatron - Portfolio (Client)'
+    };
     console.log('Contact > onFormSubmit payload', payload)
     
     await sendContactForm(payload)
     .then(
       (res) => {
         console.log('sendContactForm > res', res)
+        Swal.fire({
+          icon: 'success',
+          title: 'Email sent!',
+          text: 'Thank you for your message!',	
+        });	
       },
       (err) => {
         console.log('sendContactForm > err', err)
+        Swal.fire({
+          icon: 'error',
+          title: 'Email not sent!',
+          text: 'Something went wrong...',				
+        });
       },
     )
   }
