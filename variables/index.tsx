@@ -66,7 +66,7 @@ const HEADER_LINKS: IHEADER_LINKS[] = [
     { id: '04.', name: 'Contact', url: '/#contact' },
 ];
 
-const HEADER_RESUME: string = 'https://docs.google.com/document/d/0B6d2Yi2UT7h8SG5yejRGcjR4TWxqRnlwZUhVb25KRVBRM1hn/edit?usp=sharing&ouid=104274586205849845588&resourcekey=0-tGxfznW0c1H807Js9M_lmQ&rtpof=true&sd=true';
+const HEADER_RESUME: string = '/files/resume.pdf';
 
 const HOME_HEADERS: IHOME_HEADERS[] = [
     { id: 'h1', text: 'Marc Benedict Escatron' },
