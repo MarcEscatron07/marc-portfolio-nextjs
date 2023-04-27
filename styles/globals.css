@@ -223,10 +223,25 @@ textarea {
 #about .about-paragraph {
   background-color: #0a192f;
   padding: 20px;
+  text-align: justify;
 }
 #about .about-paragraph p {
   margin: 0px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+}
+#about .about-profile {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border: 3px solid #64ffda;
+  border-radius: 5px;
+}
+#about .about-profile img {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  border-radius: 5px;
+  z-index: 10;
 }
 #about .about-skills {
   padding: 5px;
@@ -247,6 +262,9 @@ textarea {
 #experience .experience-timeline .timeline-container {
   background-color: #0a192f;
   padding: 20px 20px 10px 20px;
+}
+#experience .experience-timeline .timeline-container .timeline-list {
+  text-align: justify;
 }
 #experience .experience-timeline .timeline-container .timeline-list .timeline-listitem {
   font-size: 1.12rem;
