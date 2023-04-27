@@ -152,7 +152,7 @@ textarea {
     padding-top: $nav-height;
 
     .page-section {
-        min-height: 88vh;
+        min-height: 630px;
         padding-top: $nav-height;
 
         .section-header {
@@ -264,7 +264,7 @@ textarea {
 
     h1 {
         font-size: 4rem;
-        padding-top: 10rem;
+        padding-top: 12%;
         color: $light-secondary;
     }
 
@@ -429,10 +429,27 @@ textarea {
 }
 /* CSS Ruleset for Contact section */
 
-@media screen and (max-width: 992px){ 
+
+@media screen and (min-width: 576px) and (max-width: 767px){ // Bootstrap Breakpoint: Small
     #home {
         h1 {
-            padding-top: 5rem;
+            padding-top: 18%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){ // Bootstrap Breakpoint: Medium
+    #home {
+        h1 {
+            padding-top: 22%;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){ // Bootstrap Breakpoint: Large
+    #home {
+        h1 {
+            padding-top: 18%;
         }
     }
 }
