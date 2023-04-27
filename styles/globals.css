@@ -150,19 +150,6 @@ textarea {
   color: #00b6ff;
 }
 
-.btn-outline {
-  background: none;
-  color: #64ffda !important;
-  border: 1px solid #64ffda;
-  padding: 10px 15px;
-  border-radius: 5px;
-  min-width: 100px;
-  text-align: center;
-}
-.btn-outline:hover {
-  background: #24957a;
-}
-
 .theme-link {
   color: #00b6ff;
 }

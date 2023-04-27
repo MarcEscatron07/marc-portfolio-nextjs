@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import Link from "next/link"
 import Swal from 'sweetalert2';
 
+import Button from '@mui/material/Button';
+import CircularProgress from '@mui/material/CircularProgress';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
@@ -23,6 +26,7 @@ function Contact() {
     email: '',
     message: '',
   });
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
 
   useEffect(() => {
@@ -40,10 +44,12 @@ function Contact() {
     };
     console.log('Contact > onFormSubmit payload', payload)
     
+    setIsLoading(true);
     await sendContactForm(payload)
     .then(
       (res) => {
         console.log('sendContactForm > res', res)
+        setIsLoading(false);
         Swal.fire({
           icon: 'success',
           title: 'Email sent!',
@@ -52,6 +58,7 @@ function Contact() {
       },
       (err) => {
         console.log('sendContactForm > err', err)
+        setIsLoading(false);
         Swal.fire({
           icon: 'error',
           title: 'Email not sent!',
@@ -102,11 +109,11 @@ function Contact() {
             <div className="row theme-container">
               <div className="col-12 my-3">
                 <label htmlFor="name" className="form-label">Name:</label>
-                <input type="text" id="name" name="name" className="form-control" onChange={(e) => onInputChange(e, 'name')} value={contactData['name']} required />
+                <input type="text" id="name" name="name" className="form-control" onChange={(e) => onInputChange(e, 'name')} value={contactData['name']} disabled={isLoading} required />
               </div>
               <div className="col-12 my-3">
                 <label htmlFor="email" className="form-label">Email:</label>
-                <input type="email" id="email" name="email" className="form-control" onChange={(e) => onInputChange(e, 'email')} value={contactData['email']} required />
+                <input type="email" id="email" name="email" className="form-control" onChange={(e) => onInputChange(e, 'email')} value={contactData['email']} disabled={isLoading} required />
               </div>
             </div>
           </div>
@@ -114,10 +121,17 @@ function Contact() {
             <div className="row theme-container">
                 <div className="col-12 my-3">
                   <label htmlFor="message" className="form-label">Message:</label>
-                  <textarea id="message" name="message" className="form-control custom-scrollbar" onChange={(e) => onInputChange(e, 'message')} value={contactData['message']} required></textarea>
+                  <textarea id="message" name="message" className="form-control custom-scrollbar" onChange={(e) => onInputChange(e, 'message')} value={contactData['message']} disabled={isLoading} required></textarea>
                 </div>
                 <div className="col-12 my-3 d-flex justify-content-end">
-                  <button type="submit" className="btn-outline">Send</button>
+                  <Button 
+                    type="submit"
+                    variant="outlined"
+                    endIcon={isLoading ? <CircularProgress color="secondary" size={20} /> : null}
+                    color="secondary"
+                  >
+                    Send
+                  </Button>
                 </div>
             </div>
           </div>
