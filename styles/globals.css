@@ -245,8 +245,8 @@ textarea {
 }
 #about .about-profile img {
   position: absolute;
-  top: -10px;
-  right: 5px;
+  top: -15px;
+  right: 8px;
   border-radius: 5px;
   z-index: 10;
 }
