@@ -61,7 +61,7 @@ function Contact() {
             <div className="row theme-container">
                 <div className="col-12 my-3">
                   <label htmlFor="contact_message" className="form-label">Message:</label>
-                  <textarea id="contact_email" name="contact_message" className="form-control" required></textarea>
+                  <textarea id="contact_email" name="contact_message" className="form-control custom-scrollbar" required></textarea>
                 </div>
                 <div className="col-12 my-3 d-flex justify-content-end">
                   <button type="submit" className="btn-outline">Send</button>

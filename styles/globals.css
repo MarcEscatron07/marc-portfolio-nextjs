@@ -53,6 +53,9 @@ textarea {
   min-height: 65px !important;
 }
 
+.custom-scrollbar {
+  cursor: auto;
+}
 .custom-scrollbar::-webkit-scrollbar {
   width: 10px;
 }
