@@ -1,8 +1,8 @@
 $nav-height: 100px;
 $footer-height: 80px;
 
-$profile-height: 200px;
-$profile-width: 200px;
+$profile-height: 220px;
+$profile-width: 220px;
 
 $primary-theme: #12233e;
 $secondary-theme: #006d79;
@@ -257,6 +257,7 @@ textarea {
     h1 {
         font-size: 4rem;
         padding-top: 10rem;
+        color: $light-secondary;
     }
 
     h2 {
