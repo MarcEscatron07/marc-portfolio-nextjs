@@ -44,7 +44,7 @@ function Contact() {
 
     const payload: any = {
       ...contactData,
-      subject: 'Marc Escatron - Portfolio (Client)'
+      subject: 'Marc Escatron - Portfolio'
     };
     console.log('Contact > onFormSubmit payload', payload)
     
