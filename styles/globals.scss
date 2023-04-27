@@ -131,7 +131,7 @@ textarea {
 
     .navbar-brand, .nav-link {
         &:hover {
-            color: $link-theme;
+            color: $light-secondary;
         }
 
         &.active {
@@ -181,6 +181,12 @@ textarea {
 
     .navbar-credit {
         margin: 0px;
+    }
+
+    a {
+        &:hover {
+            color: $light-secondary;
+        }
     }
 }
 
