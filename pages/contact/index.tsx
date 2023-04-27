@@ -38,6 +38,10 @@ function Contact() {
     e.preventDefault();
     // console.log('Contact > onFormSubmit event', e)
 
+    if(isLoading) {
+      return;
+    }
+
     const payload: any = {
       ...contactData,
       subject: 'Marc Escatron - Portfolio (Client)'
@@ -127,8 +131,8 @@ function Contact() {
                   <Button 
                     type="submit"
                     variant="outlined"
-                    endIcon={isLoading ? <CircularProgress color="secondary" size={20} /> : null}
                     color="secondary"
+                    endIcon={isLoading ? <CircularProgress color="secondary" size={20} /> : null}
                   >
                     Send
                   </Button>
