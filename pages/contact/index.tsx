@@ -57,7 +57,8 @@ function Contact() {
         Swal.fire({
           icon: 'success',
           title: 'Email sent!',
-          text: 'Thank you for your message!',	
+          text: 'Thank you for your message!',
+          confirmButtonText: 'Dismiss'
         });	
       },
       (err) => {
@@ -66,7 +67,8 @@ function Contact() {
         Swal.fire({
           icon: 'error',
           title: 'Email not sent!',
-          text: 'Something went wrong...',				
+          text: 'Something went wrong...',
+          confirmButtonText: 'Dismiss'
         });
       },
     )
