@@ -196,20 +196,6 @@ textarea {
     color: $link-theme;
 }
 
-.btn-outline {
-    background: none;
-    color: $light-secondary !important;
-    border: 1px solid $light-secondary;
-    padding: 10px 15px;
-    border-radius: 5px;
-    min-width: 100px;
-    text-align: center;
-
-    &:hover {
-        background: $alt-secondary;
-    }
-}
-
 .theme-link {
     color: $link-theme;
 }
