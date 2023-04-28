@@ -62,7 +62,6 @@ function Header() {
                 })}
             </ul>
             <Button
-              className="py-2"
               type="button" 
               variant="outlined" 
               color="secondary"

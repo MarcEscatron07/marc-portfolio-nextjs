@@ -33,7 +33,6 @@ function Application() {
                 <p className="card-text">{app.text}</p>
               </div>
               <div className="card-footer">
-                <h6 className="card-title">Technologies Applied:</h6>
                 <div className="row">
                   {app.technologies && app.technologies.map((t, tIdx) => {
                     return (

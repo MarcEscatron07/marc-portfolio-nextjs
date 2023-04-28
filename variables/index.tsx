@@ -70,8 +70,8 @@ const HEADER_RESUME: string = '/files/marc-escatron-resume.pdf';
 
 const HOME_HEADERS: IHOME_HEADERS[] = [
     { id: 'h1', text: 'Marc Benedict Escatron' },
-    { id: 'h2', text: 'Web Developer' },
-    { id: 'h3', text: 'A Frontend focused web developer specializing in single-page applications and in writing efficient & maintainable code.' },
+    { id: 'h2', text: 'Frontend Web Developer' },
+    { id: 'h3', text: 'I specialize in creating single-page applications and in writing efficient & maintainable code.' },
 ];
 
 const ABOUT_PARAGRAPHS: IABOUT_PARAGRAPHS[] = [

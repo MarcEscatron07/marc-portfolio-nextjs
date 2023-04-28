@@ -10,7 +10,7 @@ function Skills() {
     <>
         {ABOUT_SKILLS && ABOUT_SKILLS.map((skill, idx) => {
             return (
-                <div key={idx} className="col-sm-2 p-3">
+                <div key={idx} className="col-md-2 p-3">
                     <div className="row">
                         <div className="col d-flex flex-column align-items-center justify-content-center">
                             <div className="image-container image-skills">
