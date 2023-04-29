@@ -27,7 +27,7 @@ function Header() {
         <div className="container">
           <Link className="navbar-brand" href="/">
             <Image
-              src="/images/logo-image.png"
+              src="/images/portfolio-logo.png"
               alt="navbar-logo"
               height={70}
               width={70}
