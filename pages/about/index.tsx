@@ -29,7 +29,7 @@ function About() {
           </div>
           <div className="col-xl-3 my-3 d-flex align-items-center justify-content-center">
             <div className="about-profile">
-              <Image src="/images/profile-mbe.png" alt="profile-mbe" height={220} width={220} />
+              <Image src="/images/profile-image.png" alt="profile-mbe" height={220} width={220} />
             </div>
           </div>
         </div>
