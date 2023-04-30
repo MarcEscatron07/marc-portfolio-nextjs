@@ -139,7 +139,7 @@ const PROJECTS_APPLICATION: IPROJECTS_APPLICATION[] = [
         title: 'LCShop',
         text: 'LCShop is an online store that sells eSports merchandise associated with a popular video game called ‘League of Legends’.',
         repo: 'https://gitlab.com/MarcEscatron07/lcshop-capstone-1',
-        url: 'https://lcshop-capstone-1-react.vercel.app/',
+        url: 'https://lcshop-capstone-1.vercel.app/',
         technologies: [
             { icon: <DiGit/>, name: "Git" },
 			{ icon: <DiHtml5/>, name: "HTML" },
