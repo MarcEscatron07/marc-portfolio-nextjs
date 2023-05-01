@@ -416,7 +416,7 @@ textarea {
 /* CSS Ruleset for Contact section */
 
 
-@media screen and (min-width: 576px) and (max-width: 767px){ // Bootstrap Breakpoint: Small
+@media screen and (min-width: 576px) and (max-width: 768px){ // Bootstrap Breakpoint: Small
     #home {
         h1 {
             padding-top: 18%;
@@ -424,7 +424,7 @@ textarea {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px){ // Bootstrap Breakpoint: Medium
+@media screen and (min-width: 768px) and (max-width: 992px){ // Bootstrap Breakpoint: Medium
     #home {
         h1 {
             padding-top: 22%;
@@ -432,7 +432,7 @@ textarea {
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px){ // Bootstrap Breakpoint: Large
+@media screen and (min-width: 992px) and (max-width: 1200px){ // Bootstrap Breakpoint: Large
     #home {
         h1 {
             padding-top: 18%;

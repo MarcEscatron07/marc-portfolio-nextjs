@@ -321,17 +321,17 @@ textarea {
 }
 
 /* CSS Ruleset for Contact section */
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
   #home h1 {
     padding-top: 18%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   #home h1 {
     padding-top: 22%;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   #home h1 {
     padding-top: 18%;
   }
