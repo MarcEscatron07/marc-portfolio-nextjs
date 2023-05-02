@@ -152,11 +152,11 @@ const PROJECTS_APPLICATION: IPROJECTS_APPLICATION[] = [
      },
     {
         id: 'townportal',
-        logo: '/images/projects/townportal.png',
+        logo: '/images/projects/townportal-v2.png',
         title: 'Town Portal',
         text: 'Town Portal is an asset management system that manages the data of the users and equipments used in an internet cafe.',
-        repo: 'https://gitlab.com/MarcEscatron07/townportal-capstone-2',
-        url: 'http://townportal-capstone-2-v2.herokuapp.com/',
+        repo: 'https://gitlab.com/MarcEscatron07/townportal-capstone-2-lv8',
+        url: 'https://townportal-capstone-2-lv8.vercel.app/',
         technologies: [
             { icon: <DiGit/>, name: "Git" },
 			{ icon: <DiHtml5/>, name: "HTML" },
