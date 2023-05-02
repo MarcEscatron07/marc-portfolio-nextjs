@@ -1,5 +1,9 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from "next/link"
+import Swal from 'sweetalert2';
+
+import Button from '@mui/material/Button';
+import CircularProgress from '@mui/material/CircularProgress';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -8,11 +12,73 @@ import {
   CONTACT_HEADER,
   CONTACT_SOCIALS
 } from '../../variables'
+import { sendContactForm } from '@/lib/api';
+
+interface IContactData {
+  name: string,
+  email: string,
+  message: string
+}
 
 function Contact() {
-  const onFormSubmit = (e: any) => {
+  const [contactData, setContactData] = useState<IContactData>({
+    name: '',
+    email: '',
+    message: '',
+  });
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
+
+  useEffect(() => {
+    console.log('Contact > contactData', contactData)
+  }, [contactData])
+
+
+  const onFormSubmit = async (e: any) => {
     e.preventDefault();
-    console.log('Contact > onFormSubmit event', e)
+    // console.log('Contact > onFormSubmit event', e)
+
+    if(isLoading) {
+      return;
+    }
+
+    const payload: any = {
+      ...contactData,
+      subject: 'Marc Escatron - Portfolio'
+    };
+    console.log('Contact > onFormSubmit payload', payload)
+    
+    setIsLoading(true);
+    await sendContactForm(payload)
+    .then(
+      (res) => {
+        console.log('sendContactForm > res', res)
+        setIsLoading(false);
+        Swal.fire({
+          icon: 'success',
+          title: 'Email sent!',
+          text: 'Thank you for your message!',
+          confirmButtonText: 'Dismiss'
+        });	
+      },
+      (err) => {
+        console.log('sendContactForm > err', err)
+        setIsLoading(false);
+        Swal.fire({
+          icon: 'error',
+          title: 'Email not sent!',
+          text: 'Something went wrong...',
+          confirmButtonText: 'Dismiss'
+        });
+      },
+    )
+  }
+
+  const onInputChange = (e: any, fieldName: string) => {
+    setContactData({
+      ...contactData,
+      [fieldName]: e.target.value
+    })
   }
 
   return (
@@ -48,23 +114,30 @@ function Contact() {
           <div className="col-lg-5 py-2 px-4">
             <div className="row theme-container">
               <div className="col-12 my-3">
-                <label htmlFor="contact_name" className="form-label">Name:</label>
-                <input type="text" id="contact_name" name="contact_name" className="form-control" required />
+                <label htmlFor="name" className="form-label">Name:</label>
+                <input type="text" id="name" name="name" className="form-control" onChange={(e) => onInputChange(e, 'name')} value={contactData['name']} disabled={isLoading} required />
               </div>
               <div className="col-12 my-3">
-                <label htmlFor="contact_email" className="form-label">Email:</label>
-                <input type="email" id="contact_email" name="contact_email" className="form-control" required />
+                <label htmlFor="email" className="form-label">Email:</label>
+                <input type="email" id="email" name="email" className="form-control" onChange={(e) => onInputChange(e, 'email')} value={contactData['email']} disabled={isLoading} required />
               </div>
             </div>
           </div>
           <div className="col-lg-7 py-2 px-4">
             <div className="row theme-container">
                 <div className="col-12 my-3">
-                  <label htmlFor="contact_message" className="form-label">Message:</label>
-                  <textarea id="contact_email" name="contact_message" className="form-control custom-scrollbar" required></textarea>
+                  <label htmlFor="message" className="form-label">Message:</label>
+                  <textarea id="message" name="message" className="form-control custom-scrollbar" onChange={(e) => onInputChange(e, 'message')} value={contactData['message']} disabled={isLoading} required></textarea>
                 </div>
                 <div className="col-12 my-3 d-flex justify-content-end">
-                  <button type="submit" className="btn-outline">Send</button>
+                  <Button 
+                    type="submit"
+                    variant="outlined"
+                    color="secondary"
+                    endIcon={isLoading ? <CircularProgress color="secondary" size={20} /> : null}
+                  >
+                    Send
+                  </Button>
                 </div>
             </div>
           </div>

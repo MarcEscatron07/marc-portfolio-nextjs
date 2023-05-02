@@ -70,8 +70,8 @@ const HEADER_RESUME: string = '/files/marc-escatron-resume.pdf';
 
 const HOME_HEADERS: IHOME_HEADERS[] = [
     { id: 'h1', text: 'Marc Benedict Escatron' },
-    { id: 'h2', text: 'Web Developer' },
-    { id: 'h3', text: 'A Frontend focused web developer specializing in single-page applications and in writing efficient & maintainable code.' },
+    { id: 'h2', text: 'Frontend Web Developer' },
+    { id: 'h3', text: 'I specialize in creating single-page applications and in writing efficient & maintainable code.' },
 ];
 
 const ABOUT_PARAGRAPHS: IABOUT_PARAGRAPHS[] = [
@@ -139,7 +139,7 @@ const PROJECTS_APPLICATION: IPROJECTS_APPLICATION[] = [
         title: 'LCShop',
         text: 'LCShop is an online store that sells eSports merchandise associated with a popular video game called ‘League of Legends’.',
         repo: 'https://gitlab.com/MarcEscatron07/lcshop-capstone-1',
-        url: 'https://lcshop-capstone-1-v2.herokuapp.com/',
+        url: 'https://lcshop-capstone-1.vercel.app/',
         technologies: [
             { icon: <DiGit/>, name: "Git" },
 			{ icon: <DiHtml5/>, name: "HTML" },

@@ -116,8 +116,8 @@ textarea {
     }
 
     .navbar-toggler {
-        color: white;
-        border: 3px solid white;
+        color: $light-secondary;
+        border: 2px solid $light-secondary;
         font-size: 1.5rem;
     }
     
@@ -152,7 +152,7 @@ textarea {
     padding-top: $nav-height;
 
     .page-section {
-        min-height: 88vh;
+        min-height: 630px;
         padding-top: $nav-height;
 
         .section-header {
@@ -196,20 +196,6 @@ textarea {
     color: $link-theme;
 }
 
-.btn-outline {
-    background: none;
-    color: $light-secondary !important;
-    border: 1px solid $light-secondary;
-    padding: 10px 15px;
-    border-radius: 5px;
-    min-width: 100px;
-    text-align: center;
-
-    &:hover {
-        background: $alt-secondary;
-    }
-}
-
 .theme-link {
     color: $link-theme;
 }
@@ -228,7 +214,7 @@ textarea {
     }
 
     &.image-skills {
-        max-width: 50%;
+        max-width: 45%;
     }
 }
 
@@ -264,7 +250,7 @@ textarea {
 
     h1 {
         font-size: 4rem;
-        padding-top: 10rem;
+        padding-top: 12%;
         color: $light-secondary;
     }
 
@@ -305,8 +291,8 @@ textarea {
 
         img {
             position: absolute;
-            top: -10px;
-            right: 5px;
+            top: -15px;
+            right: 8px;
             border-radius: 5px;
             z-index: 10;
         }
@@ -429,10 +415,27 @@ textarea {
 }
 /* CSS Ruleset for Contact section */
 
-@media screen and (max-width: 992px){ 
+
+@media screen and (min-width: 576px) and (max-width: 768px){ // Bootstrap Breakpoint: Small
     #home {
         h1 {
-            padding-top: 5rem;
+            padding-top: 18%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ // Bootstrap Breakpoint: Medium
+    #home {
+        h1 {
+            padding-top: 22%;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ // Bootstrap Breakpoint: Large
+    #home {
+        h1 {
+            padding-top: 18%;
         }
     }
 }

@@ -87,8 +87,8 @@ textarea {
   text-transform: uppercase;
 }
 .navbar-header .navbar-toggler {
-  color: white;
-  border: 3px solid white;
+  color: #64ffda;
+  border: 2px solid #64ffda;
   font-size: 1.5rem;
 }
 .navbar-header .navbar-collapse.show {
@@ -113,7 +113,7 @@ textarea {
   padding-top: 100px;
 }
 .main-container .page-section {
-  min-height: 88vh;
+  min-height: 630px;
   padding-top: 100px;
 }
 .main-container .page-section .section-header {
@@ -150,19 +150,6 @@ textarea {
   color: #00b6ff;
 }
 
-.btn-outline {
-  background: none;
-  color: #64ffda !important;
-  border: 1px solid #64ffda;
-  padding: 10px 15px;
-  border-radius: 5px;
-  min-width: 100px;
-  text-align: center;
-}
-.btn-outline:hover {
-  background: #24957a;
-}
-
 .theme-link {
   color: #00b6ff;
 }
@@ -180,7 +167,7 @@ textarea {
   width: 100%;
 }
 .image-container.image-skills {
-  max-width: 50%;
+  max-width: 45%;
 }
 
 .card {
@@ -211,7 +198,7 @@ textarea {
 }
 #home h1 {
   font-size: 4rem;
-  padding-top: 10rem;
+  padding-top: 12%;
   color: #64ffda;
 }
 #home h2 {
@@ -245,8 +232,8 @@ textarea {
 }
 #about .about-profile img {
   position: absolute;
-  top: -10px;
-  right: 5px;
+  top: -15px;
+  right: 8px;
   border-radius: 5px;
   z-index: 10;
 }
@@ -334,9 +321,19 @@ textarea {
 }
 
 /* CSS Ruleset for Contact section */
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
   #home h1 {
-    padding-top: 5rem;
+    padding-top: 18%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #home h1 {
+    padding-top: 22%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #home h1 {
+    padding-top: 18%;
   }
 }
 

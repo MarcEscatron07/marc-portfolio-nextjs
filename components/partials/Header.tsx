@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 
+import Button from '@mui/material/Button';
+
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -25,7 +27,7 @@ function Header() {
         <div className="container">
           <Link className="navbar-brand" href="/">
             <Image
-              src="/images/logo-me.png"
+              src="/images/portfolio-logo.png"
               alt="navbar-logo"
               height={70}
               width={70}
@@ -59,9 +61,15 @@ function Header() {
                   );
                 })}
             </ul>
-            <Link className="btn-outline" href={HEADER_RESUME} target="_blank">
+            <Button
+              type="button" 
+              variant="outlined" 
+              color="secondary"
+            >
+              <Link href={HEADER_RESUME} target="_blank" style={{color: '#64ffda'}}>
                 Resumé
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
       </nav>
