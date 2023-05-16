@@ -114,15 +114,16 @@ textarea {
 }
 .main-container .page-section {
   min-height: 630px;
-  padding-top: 100px;
+  padding-top: 112px;
 }
 .main-container .page-section .section-header {
   margin-bottom: 1.5rem;
 }
 .main-container .page-section .section-header .header-content {
   font-size: 2rem;
-  padding-bottom: 3px;
-  border-bottom: 3px solid #64ffda;
+  padding: 8px 0px;
+  border: 3px #64ffda;
+  border-style: dashed none dashed none;
 }
 
 .navbar-footer {

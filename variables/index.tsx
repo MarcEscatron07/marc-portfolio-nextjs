@@ -60,10 +60,10 @@ interface ICONTACT_SOCIALS {
 
 
 const HEADER_LINKS: IHEADER_LINKS[] = [
-    { id: '01.', name: 'About', url: '/#about' },
-    { id: '02.', name: 'Experience', url: '/#experience' },
-    { id: '03.', name: 'Projects', url: '/#projects' },
-    { id: '04.', name: 'Contact', url: '/#contact' },
+    { id: '|.', name: 'About', url: '/#about' },
+    { id: '||.', name: 'Experience', url: '/#experience' },
+    { id: '|||.', name: 'Projects', url: '/#projects' },
+    { id: '||||.', name: 'Contact', url: '/#contact' },
 ];
 
 const HEADER_RESUME: string = '/files/marc-escatron-resume.pdf';
