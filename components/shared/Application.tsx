@@ -16,7 +16,7 @@ function Application() {
       {PROJECTS_APPLICATION && PROJECTS_APPLICATION.map((app, idx) => {
         return (
           <div key={idx} className="col-lg-4 p-4">
-            <div className="card">
+            <div className="card h-100">
               <Link className="card-repo" href={app.repo} title="GitLab Link" target="_blank">
                 <FontAwesomeIcon icon={faSquareGitlab} />
               </Link>
