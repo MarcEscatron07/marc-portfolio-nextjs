@@ -153,15 +153,16 @@ textarea {
 
     .page-section {
         min-height: 630px;
-        padding-top: $nav-height;
+        padding-top: calc($nav-height + 12px);
 
         .section-header {
             margin-bottom: 1.5rem;
             
             .header-content {
                 font-size: 2rem;
-                padding-bottom: 3px;
-                border-bottom: 3px solid $light-secondary;
+                padding: 8px 0px;
+                border: 3px $light-secondary;
+                border-style: dashed none dashed none;
             }
         }
     }

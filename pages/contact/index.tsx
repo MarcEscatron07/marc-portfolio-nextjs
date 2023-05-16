@@ -91,7 +91,7 @@ function Contact() {
         </h6>
         <form className="contact-form row mt-4 py-4" onSubmit={onFormSubmit}>
           <div className="col-lg-12 pb-2 px-4">
-            <div className="row theme-container">
+            <div className="row theme-container h-100">
               <div className="col-lg-9 my-2 contact-header">
                 <p>{CONTACT_HEADER}</p>
               </div>
@@ -112,7 +112,7 @@ function Contact() {
             </div>
           </div>
           <div className="col-lg-5 py-2 px-4">
-            <div className="row theme-container">
+            <div className="row theme-container h-100">
               <div className="col-12 my-3">
                 <label htmlFor="name" className="form-label">Name:</label>
                 <input type="text" id="name" name="name" className="form-control" onChange={(e) => onInputChange(e, 'name')} value={contactData['name']} disabled={isLoading} required />
@@ -124,7 +124,7 @@ function Contact() {
             </div>
           </div>
           <div className="col-lg-7 py-2 px-4">
-            <div className="row theme-container">
+            <div className="row theme-container h-100">
                 <div className="col-12 my-3">
                   <label htmlFor="message" className="form-label">Message:</label>
                   <textarea id="message" name="message" className="form-control custom-scrollbar" onChange={(e) => onInputChange(e, 'message')} value={contactData['message']} disabled={isLoading} required></textarea>
