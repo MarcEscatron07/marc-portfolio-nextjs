@@ -103,20 +103,6 @@ const ABOUT_SKILLS: IABOUT_SKILLS[] = [
 
 const EXPERIENCE_TIMELINE: IEXPERIENCE_TIMELINE[] = [
     {
-        id: 'ticto',
-        order: 2,
-        title: 'Tagbilaran Information & Communications Technology Office (T.I.C.T.O.)',
-        subtitle: 'IT Programmer | JAN 2023 - Present',
-        texts: [
-            'Prepare and write programs according to the specifications determined primarily by Senior Programmers of the City Government.',
-            'Conceive, design and test logical structures for solving problems which the computer can follow.',
-            'Coordinate with the IT Team in the preparation of designs and programs for applicability.',
-            'Recommend possible latest trend in computer programs and designs.',
-            'Maintain files, records and documents of approved computer programs and submit reports when necessary.',
-            'Regularly assess and analyze the usability of the programs and designs for development and upgrading.'
-        ]
-    },
-    {
         id: 'xurpas',
         order: 1,
         title: 'Xurpas, Inc.',
@@ -128,6 +114,20 @@ const EXPERIENCE_TIMELINE: IEXPERIENCE_TIMELINE[] = [
             'Coordinated with UI/UX Designers, QA Testers and Project Managers to transform creative concepts into reality for clients.',
             'Participated in stand-up meetings to have better progress in development with our clients\' feedback.',
             'Kept up-to-date with the latest technologies and programming trends.',
+        ]
+    },
+    {
+        id: 'ticto',
+        order: 2,
+        title: 'Tagbilaran Information & Communications Technology Office (T.I.C.T.O.)',
+        subtitle: 'IT Programmer | JAN 2023 - Present',
+        texts: [
+            'Prepare and write programs according to the specifications determined primarily by Senior Programmers of the City Government.',
+            'Conceive, design and test logical structures for solving problems which the computer can follow.',
+            'Coordinate with the IT Team in the preparation of designs and programs for applicability.',
+            'Recommend possible latest trend in computer programs and designs.',
+            'Maintain files, records and documents of approved computer programs and submit reports when necessary.',
+            'Regularly assess and analyze the usability of the programs and designs for development and upgrading.'
         ]
     }
 ];
