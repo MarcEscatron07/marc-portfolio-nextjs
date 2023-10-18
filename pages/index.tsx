@@ -22,9 +22,10 @@ export default function Home() {
           <div className="container">
             <h1 className="home-header">{HOME_HEADERS[0].text}</h1>
             <h2 className="home-header">
-              <span className="theme-link">&lt;</span>
+              <span className="theme-link">&lt;&gt;</span>
               <strong>{HOME_HEADERS[1].text}</strong>
-              <span className="theme-link">/&gt;</span></h2>
+              <span className="theme-link">&lt;/&gt;</span>
+            </h2>
             <h3 className="home-header">{HOME_HEADERS[2].text}</h3>
           </div>
         </section>
