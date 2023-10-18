@@ -122,8 +122,7 @@ textarea {
 .main-container .page-section .section-header .header-content {
   font-size: 2rem;
   padding: 8px 0px;
-  border: 3px #64ffda;
-  border-style: dashed none dashed none;
+  text-transform: uppercase;
 }
 
 .navbar-footer {

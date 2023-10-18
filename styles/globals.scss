@@ -161,8 +161,9 @@ textarea {
             .header-content {
                 font-size: 2rem;
                 padding: 8px 0px;
-                border: 3px $light-secondary;
-                border-style: dashed none dashed none;
+                text-transform: uppercase;
+                // border: 3px $light-secondary;
+                // border-style: dashed none dashed none;
             }
         }
     }
