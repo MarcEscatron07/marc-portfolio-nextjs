@@ -340,6 +340,10 @@ textarea {
 /* CSS Ruleset for Projects section */
 #projects {
     .projects-application {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         .card {
             .card-repo, .card-link {
                 position: absolute;                

@@ -213,6 +213,28 @@ const PROJECTS_APPLICATION: IPROJECTS_APPLICATION[] = [
 			{ icon: null, name: "Vercel" },
         ]
     },
+    {
+        id: 'tcfb-admin-lv9',
+        logo: '/images/projects/tagbilaran-seal.png',
+        title: 'Tagbilaran Customer Feedback',
+        text: 'Tagbilaran Customer Feedback is a system that gathers feedbacks from customers that have been served by the offices in the City Hall of Tagbilaran.',
+        repo: 'https://gitlab.com/MarcEscatron07/tcfb-admin-lv9',
+        url: 'https://tcfb-admin-lv9.vercel.app/',
+        technologies: [
+            { icon: <DiGit/>, name: "Git" },
+			{ icon: <DiHtml5/>, name: "HTML" },
+			{ icon: <DiCss3/>, name: "CSS" },			
+            { icon: <DiJavascript1/>, name: "JavaScript" },
+            { icon: <DiJqueryLogo/>, name: "jQuery" },
+			{ icon: <DiMysql/>, name: "MySQL" },
+			{ icon: <DiPhp/>, name: "PHP" },
+			{ icon: <DiLaravel/>, name: "Laravel" },
+			{ icon: <DiReact/>, name: "React" },
+			{ icon: null, name: "Electron" },
+            { icon: null, name: "Tailwind CSS" },
+			{ icon: null, name: "Vercel" },
+        ]
+    },
 ];
 
 const CONTACT_HEADER: string = "Feel free to drop a message and I will respond as soon as possible!";

@@ -266,6 +266,11 @@ textarea {
 
 /* CSS Ruleset for Experience section */
 /* CSS Ruleset for Projects section */
+#projects .projects-application {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #projects .projects-application .card .card-repo, #projects .projects-application .card .card-link {
   position: absolute;
   color: #00b6ff;
